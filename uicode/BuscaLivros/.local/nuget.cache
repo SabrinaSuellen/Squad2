@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KEvODWgLdxD0OZKuTlEMU9lFPHWi4M23z/iezDZT8oQC/a8UurrjQO/gKEJTFy/8EWJfTCzLLmaVZgQj3IuDAw==",
+  "dgSpecHash": "ZrVc7B41lVlqZdifjOLVBvSRRBU0T6oYpvPST5+BkPRCgZVG5Fg9+REEAr2LQTOoHIQoe4KJcwljrzTlVfsULg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Calcifer\\Documents\\Compasso Uol\\squad2\\uicode\\BuscaLivros\\.local\\",
+  "projectFilePath": "C:\\Squad2\\uicode\\BuscaLivros\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\Calcifer\\.nuget\\packages\\avalonedit\\6.0.1\\avalonedit.6.0.1.nupkg.sha512",
     "C:\\Users\\Calcifer\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",

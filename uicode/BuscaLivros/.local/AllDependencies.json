@@ -5347,9 +5347,9 @@
     "restore": {
       "projectUniqueName": "BuscaLivros",
       "projectName": "BuscaLivros",
-      "projectPath": "C:\\Users\\Calcifer\\Documents\\Compasso Uol\\squad2\\uicode\\BuscaLivros\\.local",
+      "projectPath": "C:\\Squad2\\uicode\\BuscaLivros\\.local",
       "packagesPath": "C:\\Users\\Calcifer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Calcifer\\Documents\\Compasso Uol\\squad2\\uicode\\BuscaLivros\\.local"
+      "outputPath": "C:\\Squad2\\uicode\\BuscaLivros\\.local"
     },
     "frameworks": {
       "net461": {
