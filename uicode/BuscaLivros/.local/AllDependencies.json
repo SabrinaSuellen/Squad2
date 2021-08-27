@@ -5347,9 +5347,9 @@
     "restore": {
       "projectUniqueName": "BuscaLivros",
       "projectName": "BuscaLivros",
-      "projectPath": "C:\\Users\\Calcifer\\Documents\\Compasso Uol\\projeto\\Nova pasta\\uicode\\BuscaLivros\\.local",
+      "projectPath": "C:\\Squad2\\uicode\\BuscaLivros\\.local",
       "packagesPath": "C:\\Users\\Calcifer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Calcifer\\Documents\\Compasso Uol\\projeto\\Nova pasta\\uicode\\BuscaLivros\\.local"
+      "outputPath": "C:\\Squad2\\uicode\\BuscaLivros\\.local"
     },
     "frameworks": {
       "net461": {
@@ -5383,13 +5383,5 @@
         "runtimeIdentifierGraphPath": "C:\\Users\\Calcifer\\AppData\\Local\\UiPath\\app-21.4.4\\runtime.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\Calcifer\\Documents\\Compasso Uol\\projeto\\Nova pasta\\uicode\\BuscaLivros\\.local\\nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qu50GSqXyfnwahu8NO+q5/K9RSffgqygDZCMZHpFCsyKf5F1ZkByigPrRDpGFHDJFRZUeVOl5sF7mETtuK7bWA==",
+  "dgSpecHash": "ZrVc7B41lVlqZdifjOLVBvSRRBU0T6oYpvPST5+BkPRCgZVG5Fg9+REEAr2LQTOoHIQoe4KJcwljrzTlVfsULg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Calcifer\\Documents\\Compasso Uol\\projeto\\Nova pasta\\uicode\\BuscaLivros\\.local\\",
+  "projectFilePath": "C:\\Squad2\\uicode\\BuscaLivros\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\Calcifer\\.nuget\\packages\\avalonedit\\6.0.1\\avalonedit.6.0.1.nupkg.sha512",
     "C:\\Users\\Calcifer\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
@@ -73,13 +73,5 @@
     "C:\\Users\\Calcifer\\.nuget\\packages\\uipath.vision\\3.0.1\\uipath.vision.3.0.1.nupkg.sha512",
     "C:\\Users\\Calcifer\\.nuget\\packages\\uipath.webapi.activities\\1.8.0-preview\\uipath.webapi.activities.1.8.0-preview.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\Calcifer\\Documents\\Compasso Uol\\projeto\\Nova pasta\\uicode\\BuscaLivros\\.local",
-      "message": "Problem reading the cache file C:\\Users\\Calcifer\\Documents\\Compasso Uol\\projeto\\Nova pasta\\uicode\\BuscaLivros\\.local\\nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
