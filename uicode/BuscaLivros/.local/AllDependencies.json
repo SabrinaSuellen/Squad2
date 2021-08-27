@@ -5341,15 +5341,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Calcifer\\.nuget\\packages\\": {}
+    "C:\\Users\\welli\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "BuscaLivros",
       "projectName": "BuscaLivros",
-      "projectPath": "C:\\Squad2\\uicode\\BuscaLivros\\.local",
-      "packagesPath": "C:\\Users\\Calcifer\\.nuget\\packages\\",
-      "outputPath": "C:\\Squad2\\uicode\\BuscaLivros\\.local"
+      "projectPath": "C:\\Users\\welli\\Documentos\\Projeto Final - UiPath\\RepositorioGit\\uicode\\BuscaLivros\\.local",
+      "packagesPath": "C:\\Users\\welli\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\welli\\Documentos\\Projeto Final - UiPath\\RepositorioGit\\uicode\\BuscaLivros\\.local"
     },
     "frameworks": {
       "net461": {
@@ -5380,7 +5380,7 @@
             "version": "[1.8.0-preview, 1.8.0-preview]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Calcifer\\AppData\\Local\\UiPath\\app-21.4.4\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\welli\\AppData\\Local\\UiPath\\app-21.4.4\\runtime.json"
       }
     }
   }
