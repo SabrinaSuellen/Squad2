@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="buscaAmazonUsa" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1690,3059" sap2010:WorkflowViewState.IdRef="buscaAmazonUsa_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="buscaAmazonUsa" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1690,3020" sap2010:WorkflowViewState.IdRef="buscaAmazonUsa_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="38">
+    <scg:List x:TypeArguments="x:String" Capacity="76">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -39,6 +39,7 @@
       <x:String>DocumentFormat.OpenXml.Presentation</x:String>
       <x:String>DocumentFormat.OpenXml</x:String>
       <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -77,11 +78,11 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Text.Encodings.Web</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>DocumentFormat.OpenXml</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Sequência que faz a busca do livro solicitado no site da Amazon USA" DisplayName="buscaAmazonUsa" sap:VirtualizedContainerService.HintSize="476,2994" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Sequência que faz a busca do livro solicitado no site da Amazon USA" DisplayName="buscaAmazonUsa" sap:VirtualizedContainerService.HintSize="476,2955" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="precoLivroString" />
       <Variable x:TypeArguments="x:String" Name="tipoLivro" />
@@ -96,7 +97,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap2010:Annotation.AnnotationText="Extra o endereço da Pasta Atual do projeto" sap:VirtualizedContainerService.HintSize="434,102" sap2010:WorkflowViewState.IdRef="Assign_4">
+    <Assign sap2010:Annotation.AnnotationText="Extrai o endereço da Pasta Atual do projeto" sap:VirtualizedContainerService.HintSize="434,102" sap2010:WorkflowViewState.IdRef="Assign_4">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[diretorioAtual]</OutArgument>
       </Assign.To>
@@ -142,13 +143,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Abre o browser na página home da Amazon USA" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Amazon.com. Spend less. Smile more." sap:VirtualizedContainerService.HintSize="434,2315" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Abre o browser na página home da Amazon USA" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Amazon.com. Spend less. Smile more." sap:VirtualizedContainerService.HintSize="434,2276" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,2028" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,2029" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="precoFreteString" />
             </Sequence.Variables>
@@ -264,7 +265,7 @@
               </sap:WorkflowViewStateService.ViewState>
             </ui:InjectJsScript>
             <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[precoFreteString]" />
-            <Assign sap2010:Annotation.AnnotationText="Faz a soma do valor do livro + valor do frete&#xD;&#xA;OBS: todos os valores estão em dolares até aqui" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Assign sap2010:Annotation.AnnotationText="Faz a soma do valor do livro + valor do frete&#xA;OBS: todos os valores estão em dolares até aqui" sap:VirtualizedContainerService.HintSize="334,133" sap2010:WorkflowViewState.IdRef="Assign_3">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Double">[valorTotalCompra]</OutArgument>
               </Assign.To>
