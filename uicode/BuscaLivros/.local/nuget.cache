@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BlaNtvjMW+LdGahnjeQAf8WAJIyqvahnhoIfyIQ7AQZtCRWgJLFenwYluzwsngsVE0AjCU1+psZ4OsQvlVMC9Q==",
+  "dgSpecHash": "8Jrv3SJkeViWqQ+Sw7JG67HhRy9XbsQy1n7gP1QXQi1qW+8SP7V/fsJBwoihejPbxhwtf9ndfH/JITX4r5EOyg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lucas\\Documents\\Compasso\\Squad2\\uicode\\BuscaLivros\\.local\\",
+  "projectFilePath": "C:\\Squad2\\uicode\\BuscaLivros\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\Lucas\\.nuget\\packages\\avalonedit\\6.0.1\\avalonedit.6.0.1.nupkg.sha512",
     "C:\\Users\\Lucas\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
