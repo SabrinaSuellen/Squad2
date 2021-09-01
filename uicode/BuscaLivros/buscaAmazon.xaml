@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="buscaAmazonUsa" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1690,3858" sap2010:WorkflowViewState.IdRef="buscaAmazonUsa_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="buscaAmazonUsa" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1827,4182" sap2010:WorkflowViewState.IdRef="buscaAmazonUsa_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="39">
       <x:String>System.Activities</x:String>
@@ -83,7 +83,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Sequência que faz a busca do livro solicitado no site da Amazon USA" DisplayName="buscaAmazonUsa" sap:VirtualizedContainerService.HintSize="831,3793" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Sequência que faz a busca do livro solicitado no site da Amazon USA" DisplayName="buscaAmazonUsa" sap:VirtualizedContainerService.HintSize="1119,4117" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="precoLivroString" />
       <Variable x:TypeArguments="x:String" Name="tipoLivro" />
@@ -99,7 +99,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap2010:Annotation.AnnotationText="Extrai o endereço da Pasta Atual do projeto" sap:VirtualizedContainerService.HintSize="789,102" sap2010:WorkflowViewState.IdRef="Assign_4">
+    <Assign sap2010:Annotation.AnnotationText="Extrai o endereço da Pasta Atual do projeto" sap:VirtualizedContainerService.HintSize="1077,102" sap2010:WorkflowViewState.IdRef="Assign_4">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[diretorioAtual]</OutArgument>
       </Assign.To>
@@ -112,14 +112,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:Replace sap2010:Annotation.AnnotationText="Troca a pasta final pela pasta de scripts e salva o path completo em outra variavel" sap:VirtualizedContainerService.HintSize="789,101" sap2010:WorkflowViewState.IdRef="Replace_1" Input="[diretorioAtual]" IsBuilderTabModified="False" Pattern="BuscaLivros" RegexOption="IgnoreCase, Compiled" Replacement="js scripts" Result="[diretorioScripts]">
+    <ui:Replace sap2010:Annotation.AnnotationText="Troca a pasta final pela pasta de scripts e salva o path completo em outra variavel" sap:VirtualizedContainerService.HintSize="1077,101" sap2010:WorkflowViewState.IdRef="Replace_1" Input="[diretorioAtual]" IsBuilderTabModified="False" Pattern="BuscaLivros" RegexOption="IgnoreCase, Compiled" Replacement="js scripts" Result="[diretorioScripts]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:Replace>
-    <Assign sap2010:Annotation.AnnotationText="Pega o valor correspondente ao nome do livro que será buscado" sap:VirtualizedContainerService.HintSize="789,102" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign sap2010:Annotation.AnnotationText="Pega o valor correspondente ao nome do livro que será buscado" sap:VirtualizedContainerService.HintSize="1077,102" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[nomeLivro]</OutArgument>
       </Assign.To>
@@ -132,7 +132,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <Assign sap2010:Annotation.AnnotationText="Coleta o tipo de livro do dict fornecido" sap:VirtualizedContainerService.HintSize="789,91" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap2010:Annotation.AnnotationText="Coleta o tipo de livro do dict fornecido" sap:VirtualizedContainerService.HintSize="1077,91" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[tipoLivro]</OutArgument>
       </Assign.To>
@@ -145,7 +145,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="789,60" sap2010:WorkflowViewState.IdRef="Assign_7">
+    <Assign sap:VirtualizedContainerService.HintSize="1077,60" sap2010:WorkflowViewState.IdRef="Assign_7">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[linkSiteAmazon]</OutArgument>
       </Assign.To>
@@ -153,13 +153,13 @@
         <InArgument x:TypeArguments="x:String">["https://www.amazon.co.uk/"]</InArgument>
       </Assign.Value>
     </Assign>
-    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Abre o browser na página home da Amazon USA" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Amazon.com. Spend less. Smile more." sap:VirtualizedContainerService.HintSize="789,3014" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Abre o browser na página home da Amazon USA" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Amazon.com. Spend less. Smile more." sap:VirtualizedContainerService.HintSize="1077,3338" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="755,2767" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1043,3091" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="precoFreteString" />
             </Sequence.Variables>
@@ -168,7 +168,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick sap2010:Annotation.AnnotationText="Clica na opção para selecionar um filtro as buscas" ClickType="Single" DisplayName="Click 'All Departments'" sap:VirtualizedContainerService.HintSize="713,197" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left">
+            <uix:NClick sap2010:Annotation.AnnotationText="Clica na opção para selecionar um filtro as buscas" ClickType="Single" DisplayName="Click 'All Departments'" sap:VirtualizedContainerService.HintSize="1001,197" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.amazon.com/" DesignTimeRectangle="239, 89, 201, 35" ElementType="DropDown" FriendlyName="'All Departments'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' aaname='Search in' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAM0AAAAnCAYAAACsY8yNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIoSURBVHhe7d0xaxNhHMdx34OTo+/Ewc35WQ4hSwmEghRcMmVottJDcOlQl051OJGCnEOhpNRKOiR06RKQgBzIQUha8gJ+5s5rPOGG/K95xMj3Az9o72mHQr7cJUsfPX7yVIyx1Uc0jBm3jObZ8xe6+PJVs9lM8/l8Y9e/uhLgUx5NFszt3V3li3DTNhgMij8N8COPJrvDVL0AN3FEA9/yaDb9kaw8ooFveTRVL75NHdHAN6IBjIgGMCIawIhoACOiAYyIBjAiGsCIaAAjogGMiAYwIhrA6AHRJLq5uNTN9z+vxXstHQ2L74dHau3FSpbn/kc08K1+NMN3ajinxuF16fpYJ22ng37xff9Arn2i8fLc/4gGvtWO5vqwoe77Y3WDUL3J/fWHRxNFkZrNZuWys6rfKY9o4Fu9aCY9hXksU/X2A4Xn0+JsPXeaqnBWCSYb0cC3WtFMz0MF+z1Ns6/PQrndU6X52foez8rhrBpMNqKBbzWiSXW669T9NFb6I1X6LVbXdRQn2dl639NksViCyUY08M0eTRKr4wJtbbfUKrb10qn9cbw454MA/P/M0SSfOwre/Ho0u7+WP67tRBoV0YRnxXucLJrt48X13z/re0QD38zRRDvlN/7F8g8GXikazTX68FqBK+42k0u9XdyF/ubdhmjgW60PAv7lEQ18IxrAiGgAI6IBjIgGMCIawIhoACOiAYyIBjAiGsCIaACjPBr+qROwKukn7204c2uM8uUAAAAASUVORK5CYII=" InformativeScreenshot="7f0d646464d47563d0fc79c0be032ccf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com. Spend less. Smile more.' /&gt;" SearchSteps="FuzzySelector, Image">
                   <uix:TargetAnchorable.Anchors>
@@ -184,7 +184,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Digita as iniciais da catgoria Books e aperta enter para seleciona-la" ClickBeforeMode="Single" DisplayName="Type Into 'All Departments'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="713,268" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[&quot;bo&quot;+&quot;[k(enter)]&quot;]">
+            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Digita as iniciais da catgoria Books e aperta enter para seleciona-la" ClickBeforeMode="Single" DisplayName="Type Into 'All Departments'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1001,268" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[&quot;bo&quot;+&quot;[k(enter)]&quot;]">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.amazon.com/" DesignTimeRectangle="239, 89, 201, 35" ElementType="DropDown" FriendlyName="'All Departments'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' aaname='Search in' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAM0AAAAnCAYAAACsY8yNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIoSURBVHhe7d0xaxNhHMdx34OTo+/Ewc35WQ4hSwmEghRcMmVottJDcOlQl051OJGCnEOhpNRKOiR06RKQgBzIQUha8gJ+5s5rPOGG/K95xMj3Az9o72mHQr7cJUsfPX7yVIyx1Uc0jBm3jObZ8xe6+PJVs9lM8/l8Y9e/uhLgUx5NFszt3V3li3DTNhgMij8N8COPJrvDVL0AN3FEA9/yaDb9kaw8ooFveTRVL75NHdHAN6IBjIgGMCIawIhoACOiAYyIBjAiGsCIaAAjogGMiAYwIhrA6AHRJLq5uNTN9z+vxXstHQ2L74dHau3FSpbn/kc08K1+NMN3ajinxuF16fpYJ22ng37xff9Arn2i8fLc/4gGvtWO5vqwoe77Y3WDUL3J/fWHRxNFkZrNZuWys6rfKY9o4Fu9aCY9hXksU/X2A4Xn0+JsPXeaqnBWCSYb0cC3WtFMz0MF+z1Ns6/PQrndU6X52foez8rhrBpMNqKBbzWiSXW669T9NFb6I1X6LVbXdRQn2dl639NksViCyUY08M0eTRKr4wJtbbfUKrb10qn9cbw454MA/P/M0SSfOwre/Ho0u7+WP67tRBoV0YRnxXucLJrt48X13z/re0QD38zRRDvlN/7F8g8GXikazTX68FqBK+42k0u9XdyF/ubdhmjgW60PAv7lEQ18IxrAiGgAI6IBjIgGMCIawIhoACOiAYyIBjAiGsCIaACjPBr+qROwKukn7204c2uM8uUAAAAASUVORK5CYII=" InformativeScreenshot="81105496e2e75c801b3bd32cce24d219.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com. Spend less. Smile more.' /&gt;" SearchSteps="FuzzySelector, Image">
                   <uix:TargetAnchorable.Anchors>
@@ -200,7 +200,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Digita o nome do livro que será buscado, o nome é retirado do dict fornecido" ClickBeforeMode="None" DisplayName="Type Into 'INPUT twotabsearchtextb…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="713,268" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[nomeLivro +&quot;[k(enter)]&quot;]">
+            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Digita o nome do livro que será buscado, o nome é retirado do dict fornecido" ClickBeforeMode="None" DisplayName="Type Into 'INPUT twotabsearchtextb…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1001,268" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[nomeLivro +&quot;[k(enter)]&quot;]">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.amazon.com/" DesignTimeRectangle="290, 90, 581, 38" ElementType="InputBox" FriendlyName="'INPUT twotabsearchtextb…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAkkAAAAqCAYAAACnf8/pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD9SURBVHhe7daxCYNQAEVRd7CydLwMmV4Lp7HPD4iEBO4GOQde8ya407ysw8zMzMx+N53nObZ9HwAAjPF6Pq5dkXQcx30DAPw3kQQAEEQSAEAQSQAAQSQBAASRBAAQRBIAQBBJAABBJAEABJEEABBEEgBAEEkAAEEkAQAEkQQAEEQSAEAQSQAAQSQBAASRBAAQRBIAQBBJAABBJAEABJEEABBEEgBAEEkAAEEkAQAEkQQAEEQSAEAQSQAAQSQBAASRBAAQRBIAQBBJAABBJAEABJEEABBEEgBAEEkAAEEkAQAEkQQAEH4iadv3+wYA+G+fSJqXdZiZmZnZ99bxBt0z1F4KAF0CAAAAAElFTkSuQmCC" InformativeScreenshot="729b30567933a90d9a489c9e55415123.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com. Spend less. Smile more.' /&gt;" SearchSteps="FuzzySelector, Image">
                   <uix:TargetAnchorable.Anchors>
@@ -216,7 +216,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <ui:InjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" sap2010:Annotation.AnnotationText="Seleciona o primeiro item do resultado da busca" DisplayName="Inject Js Script - Clica primeiro livro" sap:VirtualizedContainerService.HintSize="713,165" sap2010:WorkflowViewState.IdRef="InjectJsScript_1" ScriptCode="[diretorioScripts + &quot;\clickPrimeiroLivro.js&quot;]">
+            <ui:InjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" sap2010:Annotation.AnnotationText="Seleciona o primeiro item do resultado da busca" DisplayName="Inject Js Script - Clica primeiro livro" sap:VirtualizedContainerService.HintSize="1001,165" sap2010:WorkflowViewState.IdRef="InjectJsScript_1" ScriptCode="[diretorioScripts + &quot;\clickPrimeiroLivro.js&quot;]">
               <ui:InjectJsScript.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="525e7668-5c22-4595-a39c-fe44622b83ac" InformativeScreenshot="54e45b14bfa5c51ffd2eb5cebfda9104" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div' parentid='search' tag='DIV' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -233,7 +233,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:InjectJsScript>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="713,418" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1001,183" sap2010:WorkflowViewState.IdRef="TryCatch_2">
               <TryCatch.Try>
                 <ui:InjectJsScript sap2010:Annotation.AnnotationText="Faz a varredura das opções de livros para encontra a opção solicitada usando a variável tipoLivro como parâmetro de entrada e precoLivroString como saída" DisplayName="Inject Js Script - Varre as opções" sap:VirtualizedContainerService.HintSize="334,191" sap2010:WorkflowViewState.IdRef="InjectJsScript_2" InputParameter="[tipoLivro]" ScriptCode="[diretorioScripts + &quot;\pegaPrecoLivro.js&quot;]">
                   <ui:InjectJsScript.ScriptOutput>
@@ -257,7 +257,7 @@
                 </ui:InjectJsScript>
               </TryCatch.Try>
               <TryCatch.Catches>
-                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -288,55 +288,161 @@
                 </Catch>
               </TryCatch.Catches>
             </TryCatch>
-            <If Condition="[linkSiteAmazon = &quot;https://www.amazon.com/&quot;]" sap:VirtualizedContainerService.HintSize="713,335" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[linkSiteAmazon = &quot;https://www.amazon.com/&quot;]" sap:VirtualizedContainerService.HintSize="1001,1019" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
-                <ui:InjectJsScript InputParameter="{x:Null}" sap2010:Annotation.AnnotationText="Função JS extrai texto onde está o valor do frete e utiliza uma regex para extrai apenas o preço" DisplayName="Inject Js Script 'chrome.exe The'" sap:VirtualizedContainerService.HintSize="334,176" sap2010:WorkflowViewState.IdRef="InjectJsScript_3" ScriptCode="[diretorioScripts + &quot;\pegaPrecoFreteUSA.js&quot;]">
-                  <ui:InjectJsScript.ScriptOutput>
-                    <OutArgument x:TypeArguments="x:String">[precoFreteString]</OutArgument>
-                  </ui:InjectJsScript.ScriptOutput>
-                  <ui:InjectJsScript.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="691e2739-c4b2-45e3-b770-47d511e6564e" InformativeScreenshot="8f728da27bce1be92c1bac5e5d5c222b">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:InjectJsScript.Target>
+                <Sequence sap:VirtualizedContainerService.HintSize="476,860" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                </ui:InjectJsScript>
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,766" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                    <TryCatch.Try>
+                      <ui:InjectJsScript InputParameter="{x:Null}" sap2010:Annotation.AnnotationText="Função JS extrai texto onde está o valor do frete e utiliza uma regex para extrai apenas o preço" DisplayName="Inject Js Script 'chrome.exe The'" sap:VirtualizedContainerService.HintSize="334,176" sap2010:WorkflowViewState.IdRef="InjectJsScript_3" ScriptCode="[diretorioScripts + &quot;\pegaPrecoFreteUSA.js&quot;]">
+                        <ui:InjectJsScript.ScriptOutput>
+                          <OutArgument x:TypeArguments="x:String">[precoFreteString]</OutArgument>
+                        </ui:InjectJsScript.ScriptOutput>
+                        <ui:InjectJsScript.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="691e2739-c4b2-45e3-b770-47d511e6564e" InformativeScreenshot="8f728da27bce1be92c1bac5e5d5c222b">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:InjectJsScript.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:InjectJsScript>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,604" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                          <Sequence sap:VirtualizedContainerService.HintSize="376,535" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Preço do frete não disponível&quot;]" />
+                            <uix:NTakeScreenshot DisplayName="Take Screenshot 'Nineteen Eighty-Four'" FileName="screenshot.png" FileNameMode="DateTime" sap:VirtualizedContainerService.HintSize="334,241" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1">
+                              <uix:NTakeScreenshot.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 1320, 784" FriendlyName="'Nineteen Eighty-Four'" InformativeScreenshot="6b64689b30326dd4e53e4dcec69a3795.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Nineteen Eighty-Four (Baker Street Readers): Evans, Tony, Orwell*' /&gt;" SearchSteps="Selector, FuzzySelector">
+                                  <uix:TargetAnchorable.FuzzySelectorArgument>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </uix:TargetAnchorable.FuzzySelectorArgument>
+                                </uix:TargetAnchorable>
+                              </uix:NTakeScreenshot.Target>
+                            </uix:NTakeScreenshot>
+                            <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_8">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[precoFreteString]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">null</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
+                </Sequence>
               </If.Then>
               <If.Else>
-                <ui:InjectJsScript InputParameter="{x:Null}" sap2010:Annotation.AnnotationText="Função JS extrai texto onde está o valor do frete e utiliza uma regex para extrai apenas o preço" DisplayName="Inject Js Script 'chrome.exe The'" sap:VirtualizedContainerService.HintSize="334,176" sap2010:WorkflowViewState.IdRef="InjectJsScript_4" ScriptCode="[diretorioScripts + &quot;\pegaPrecoFreteUK.js&quot;]">
-                  <ui:InjectJsScript.ScriptOutput>
-                    <OutArgument x:TypeArguments="x:String">[precoFreteString]</OutArgument>
-                  </ui:InjectJsScript.ScriptOutput>
-                  <ui:InjectJsScript.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="691e2739-c4b2-45e3-b770-47d511e6564e" InformativeScreenshot="8f728da27bce1be92c1bac5e5d5c222b">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
-                    </ui:Target>
-                  </ui:InjectJsScript.Target>
+                <Sequence sap:VirtualizedContainerService.HintSize="476,860" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                </ui:InjectJsScript>
+                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="434,766" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                    <TryCatch.Try>
+                      <ui:InjectJsScript InputParameter="{x:Null}" sap2010:Annotation.AnnotationText="Função JS extrai texto onde está o valor do frete e utiliza uma regex para extrai apenas o preço" DisplayName="Inject Js Script 'chrome.exe The'" sap:VirtualizedContainerService.HintSize="334,176" sap2010:WorkflowViewState.IdRef="InjectJsScript_4" ScriptCode="[diretorioScripts + &quot;\pegaPrecoFreteUK.js&quot;]">
+                        <ui:InjectJsScript.ScriptOutput>
+                          <OutArgument x:TypeArguments="x:String">[precoFreteString]</OutArgument>
+                        </ui:InjectJsScript.ScriptOutput>
+                        <ui:InjectJsScript.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="691e2739-c4b2-45e3-b770-47d511e6564e" InformativeScreenshot="8f728da27bce1be92c1bac5e5d5c222b">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:InjectJsScript.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:InjectJsScript>
+                    </TryCatch.Try>
+                    <TryCatch.Catches>
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,604" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ActivityAction x:TypeArguments="s:Exception">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                          </ActivityAction.Argument>
+                          <Sequence sap:VirtualizedContainerService.HintSize="376,535" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;Preço do frete não disponível&quot;]" />
+                            <uix:NTakeScreenshot DisplayName="Take Screenshot 'Nineteen Eighty-Four'" FileName="screenshot.png" FileNameMode="DateTime" sap:VirtualizedContainerService.HintSize="334,241" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2">
+                              <uix:NTakeScreenshot.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 1320, 784" FriendlyName="'Nineteen Eighty-Four'" InformativeScreenshot="6b64689b30326dd4e53e4dcec69a3795.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Nineteen Eighty-Four (Baker Street Readers): Evans, Tony, Orwell*' /&gt;" SearchSteps="Selector, FuzzySelector">
+                                  <uix:TargetAnchorable.FuzzySelectorArgument>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </uix:TargetAnchorable.FuzzySelectorArgument>
+                                </uix:TargetAnchorable>
+                              </uix:NTakeScreenshot.Target>
+                            </uix:NTakeScreenshot>
+                            <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_9">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[precoFreteString]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">null</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </ActivityAction>
+                      </Catch>
+                    </TryCatch.Catches>
+                  </TryCatch>
+                </Sequence>
               </If.Else>
             </If>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="713,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[precoLivroString]" />
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="713,59" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[precoFreteString]" />
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="713,485" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1001,59" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[precoLivroString]" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1001,59" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[precoFreteString]" />
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1001,360" sap2010:WorkflowViewState.IdRef="TryCatch_1">
               <TryCatch.Try>
                 <Assign sap2010:Annotation.AnnotationText="Faz a soma do valor do livro + valor do frete&#xA;OBS: todos os valores estão em dolares até aqui" sap:VirtualizedContainerService.HintSize="262,133" sap2010:WorkflowViewState.IdRef="Assign_3">
                   <Assign.To>
@@ -353,10 +459,10 @@
                 </Assign>
               </TryCatch.Try>
               <TryCatch.Catches>
-                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,323" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -384,7 +490,7 @@
                 </Catch>
               </TryCatch.Catches>
             </TryCatch>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="713,59" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;O preço total da compra na Amazon USA será de: U$ &quot;+valorTotalCompra.ToString]" />
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="1001,59" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;O preço total da compra na Amazon USA será de: U$ &quot;+valorTotalCompra.ToString]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>

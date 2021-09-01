@@ -1,4 +1,4 @@
-function pegaPrecoFrete(element, tipoLivro){
+function pegaPreçoLivro(element, tipoLivro){
 
     lista = document.getElementsByClassName("a-button-list")[0];
     arrayItens = lista.getElementsByTagName("li");
