@@ -1,5 +1,0 @@
-﻿(16_04_47) E-mail contém subject inválido: Seu novo OneDrive está quase pronto
-(16_04_52) E-mail contém subject inválido: Bem-vindo à sua nova conta do Outlook.com
-(16_04_52) E-mail contém subject inválido: Verify your new Amazon account
-(16_04_52) E-mail contém subject inválido: assunto não válido
-(16_04_52) E-mail processado 99685 contém os seguintes valores: The Vanishing Half, Brit Bennett, 133, Hardcover
