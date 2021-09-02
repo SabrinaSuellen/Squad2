@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1515,4345</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1827,4323</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TestEmail_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="36">
@@ -80,7 +80,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestEmail" sap:VirtualizedContainerService.HintSize="1525,4280" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TestEmail" sap:VirtualizedContainerService.HintSize="1530,4258" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strUser" />
       <Variable x:TypeArguments="ss:SecureString" Name="strPass" />
@@ -107,31 +107,31 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BuildDataTable DataTable="[dtOutput]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="1483,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;ID_x0020_E-mail&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Nome&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Autor&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;N_x00BA__x0020_de_x0020_Pág.&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Preço_x0020__x0024_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Preço_x0020__x20AC__x0020_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Melhor_x0020_Preço&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Status_x0020_RPA&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Tipo_x0020_Capa&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="emailCredential" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="1483,79" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[strPass]" Username="[strUser]" />
-    <ui:GetIMAPMailMessages FilterExpression="{x:Null}" Password="{x:Null}" TimeoutMS="{x:Null}" DeleteMessages="False" DisplayName="Get IMAP Mail Messages" Email="[strUser]" EnableSSL="True" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="1483,22" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_1" MailFolder="Inbox" MarkAsRead="False" Messages="[listMailMassages]" OnlyUnreadMessages="False" OrderByDate="NewestFirst" Port="993" SecureConnection="Auto" SecurePassword="[strPass]" Server="[serverEmail]" Top="15" />
-    <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1483,3322" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[listMailMassages]">
+    <ui:BuildDataTable DataTable="[dtOutput]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="1488,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ID_x0020_E-mail&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Nome&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Autor&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;N_x00BA__x0020_de_x0020_Pág.&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Preço_x0020__x0024_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Preço_x0020__x20AC_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Melhor_x0020_Preço&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Status_x0020_RPA&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Tipo_x0020_Capa&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="emailCredential" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="1488,79" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[strPass]" Username="[strUser]" />
+    <ui:GetIMAPMailMessages FilterExpression="{x:Null}" Password="{x:Null}" TimeoutMS="{x:Null}" DeleteMessages="False" DisplayName="Get IMAP Mail Messages" Email="[strUser]" EnableSSL="True" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="1488,22" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_1" MailFolder="Inbox" MarkAsRead="False" Messages="[listMailMassages]" OnlyUnreadMessages="False" OrderByDate="NewestFirst" Port="993" SecureConnection="Auto" SecurePassword="[strPass]" Server="[serverEmail]" Top="100" />
+    <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1488,3304" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[listMailMassages]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="snm:MailMessage">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="mail" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1447,3188" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1452,3170" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If Condition="[mail.Subject.ToString.Contains(&quot;Livro - ID&quot;)]" sap:VirtualizedContainerService.HintSize="1404.8,3096" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[mail.Subject.ToString.Contains(&quot;Livro - ID&quot;)]" sap:VirtualizedContainerService.HintSize="1410,3078" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
-                <Sequence sap:VirtualizedContainerService.HintSize="1027.2,2936.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence sap:VirtualizedContainerService.HintSize="1031,2920" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign DisplayName="Captura do ID do E-mail" sap:VirtualizedContainerService.HintSize="985.6,60" sap2010:WorkflowViewState.IdRef="Assign_10">
+                  <Assign DisplayName="Captura do ID do E-mail" sap:VirtualizedContainerService.HintSize="989,60" sap2010:WorkflowViewState.IdRef="Assign_10">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[idLivro]</OutArgument>
                     </Assign.To>
@@ -139,14 +139,14 @@
                       <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(mail.Subject, "(?&lt;=Livro - ID )(\d*)").Value.Trim]</InArgument>
                     </Assign.Value>
                   </Assign>
-                  <Sequence DisplayName="Filtragem e tratamento do Email body" sap:VirtualizedContainerService.HintSize="985.6,352.8" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                  <Sequence DisplayName="Filtragem e tratamento do Email body" sap:VirtualizedContainerService.HintSize="989,352" sap2010:WorkflowViewState.IdRef="Sequence_17">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_15">
+                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_15">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[body]</OutArgument>
                       </Assign.To>
@@ -154,7 +154,7 @@
                         <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(mail.Body, "\s", " ")]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_16">
+                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_16">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[body]</OutArgument>
                       </Assign.To>
@@ -162,7 +162,7 @@
                         <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Replace(body, "&lt;[^&gt;]+&gt;|", "")]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_17">
+                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_17">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[body]</OutArgument>
                       </Assign.To>
@@ -171,14 +171,14 @@
                       </Assign.Value>
                     </Assign>
                   </Sequence>
-                  <Sequence DisplayName="Captura de Dados do Body" sap:VirtualizedContainerService.HintSize="985.6,452.8" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <Sequence DisplayName="Captura de Dados do Body" sap:VirtualizedContainerService.HintSize="989,452" sap2010:WorkflowViewState.IdRef="Sequence_19">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign DisplayName="Captura do Nome do Livro" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_18">
+                    <Assign DisplayName="Captura do Nome do Livro" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_18">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[nomeLivro]</OutArgument>
                       </Assign.To>
@@ -186,7 +186,7 @@
                         <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(body, "(?&lt;=Livro:)(.*)(?=Autor)").ToString.Trim]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign DisplayName="Captura do Autor do Livro" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_19">
+                    <Assign DisplayName="Captura do Autor do Livro" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_19">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[nomeAutor]</OutArgument>
                       </Assign.To>
@@ -194,7 +194,7 @@
                         <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(body, "(?&lt;=Autor:)[\w ]*(?=Nº)").ToString.Trim]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign DisplayName="Captura do Número de Páginas" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_20">
+                    <Assign DisplayName="Captura do Número de Páginas" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_20">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[numPaginas]</OutArgument>
                       </Assign.To>
@@ -202,7 +202,7 @@
                         <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(body, "(?&lt;=Páginas:)[ \d]*(?=páginas)").ToString.Trim]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign DisplayName="Captura do Tipo de Capa" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_21">
+                    <Assign DisplayName="Captura do Tipo de Capa" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_21">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[tipoCapa]</OutArgument>
                       </Assign.To>
@@ -211,7 +211,7 @@
                       </Assign.Value>
                     </Assign>
                   </Sequence>
-                  <If Condition="[String.IsNullOrWhiteSpace(nomeLivro) or String.IsNullOrWhiteSpace(nomeAutor) or String.IsNullOrWhiteSpace(numPaginas) or String.IsNullOrWhiteSpace(tipoCapa)]" DisplayName="Verifica se há campos nulos no body" sap:VirtualizedContainerService.HintSize="985.6,1858.4" sap2010:WorkflowViewState.IdRef="If_10">
+                  <If Condition="[String.IsNullOrWhiteSpace(nomeLivro) or String.IsNullOrWhiteSpace(nomeAutor) or String.IsNullOrWhiteSpace(numPaginas) or String.IsNullOrWhiteSpace(tipoCapa)]" DisplayName="Verifica se há campos nulos no body" sap:VirtualizedContainerService.HintSize="989,1844" sap2010:WorkflowViewState.IdRef="If_10">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -219,21 +219,21 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence DisplayName="Mensagem de erro no log" sap:VirtualizedContainerService.HintSize="566.4,1699.2" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                      <Sequence DisplayName="Mensagem de erro no log" sap:VirtualizedContainerService.HintSize="568,1686" sap2010:WorkflowViewState.IdRef="Sequence_20">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence DisplayName="montagem mensagem de erro" sap:VirtualizedContainerService.HintSize="524.8,1344" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <Sequence DisplayName="montagem mensagem de erro" sap:VirtualizedContainerService.HintSize="526,1332" sap2010:WorkflowViewState.IdRef="Sequence_18">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <If Condition="[String.IsNullOrWhiteSpace(nomeLivro)]" sap:VirtualizedContainerService.HintSize="483.2,239.2" sap2010:WorkflowViewState.IdRef="If_6">
+                          <If Condition="[String.IsNullOrWhiteSpace(nomeLivro)]" sap:VirtualizedContainerService.HintSize="484,237" sap2010:WorkflowViewState.IdRef="If_6">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -241,7 +241,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_22">
+                              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_22">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:String">[mensagemLogBody]</OutArgument>
                                 </Assign.To>
@@ -251,9 +251,9 @@
                               </Assign>
                             </If.Then>
                           </If>
-                          <If Condition="[String.IsNullOrWhiteSpace(nomeAutor)]" sap:VirtualizedContainerService.HintSize="483.2,239.2" sap2010:WorkflowViewState.IdRef="If_7">
+                          <If Condition="[String.IsNullOrWhiteSpace(nomeAutor)]" sap:VirtualizedContainerService.HintSize="484,237" sap2010:WorkflowViewState.IdRef="If_7">
                             <If.Then>
-                              <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_23">
+                              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_23">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:String">[mensagemLogBody]</OutArgument>
                                 </Assign.To>
@@ -263,9 +263,9 @@
                               </Assign>
                             </If.Then>
                           </If>
-                          <If Condition="[String.IsNullOrWhiteSpace(numPaginas)]" sap:VirtualizedContainerService.HintSize="483.2,239.2" sap2010:WorkflowViewState.IdRef="If_8">
+                          <If Condition="[String.IsNullOrWhiteSpace(numPaginas)]" sap:VirtualizedContainerService.HintSize="484,237" sap2010:WorkflowViewState.IdRef="If_8">
                             <If.Then>
-                              <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_24">
+                              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_24">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:String">[mensagemLogBody]</OutArgument>
                                 </Assign.To>
@@ -275,9 +275,9 @@
                               </Assign>
                             </If.Then>
                           </If>
-                          <If Condition="[String.IsNullOrWhiteSpace(tipoCapa)]" sap:VirtualizedContainerService.HintSize="483.2,239.2" sap2010:WorkflowViewState.IdRef="If_9">
+                          <If Condition="[String.IsNullOrWhiteSpace(tipoCapa)]" sap:VirtualizedContainerService.HintSize="484,237" sap2010:WorkflowViewState.IdRef="If_9">
                             <If.Then>
-                              <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_25">
+                              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_25">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:String">[mensagemLogBody]</OutArgument>
                                 </Assign.To>
@@ -287,9 +287,9 @@
                               </Assign>
                             </If.Then>
                           </If>
-                          <ui:AppendLine DisplayName="Append Line" FileName="[&quot;C:\Squad2\logs\&quot;+nomeLog]" sap:VirtualizedContainerService.HintSize="483.2,134.4" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[DateTime.Now.ToString(&quot;(HH_mm_ss)&quot;)+&quot; E-mail com ID &quot;+idLivro+ &quot; contém os seguintes campos inválidos: &quot; + mensagemLogBody]" UseDefaultEncoding="False" />
+                          <ui:AppendLine DisplayName="Append Line" FileName="[&quot;C:\Squad2\logs\&quot;+nomeLog]" sap:VirtualizedContainerService.HintSize="484,132" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[DateTime.Now.ToString(&quot;(HH_mm_ss)&quot;)+&quot; E-mail com ID &quot;+idLivro+ &quot; contém os seguintes campos inválidos: &quot; + mensagemLogBody]" UseDefaultEncoding="False" />
                         </Sequence>
-                        <Assign DisplayName="Atualização do statusRPA" sap:VirtualizedContainerService.HintSize="524.8,60" sap2010:WorkflowViewState.IdRef="Assign_30">
+                        <Assign DisplayName="Atualização do statusRPA" sap:VirtualizedContainerService.HintSize="526,60" sap2010:WorkflowViewState.IdRef="Assign_30">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[status]</OutArgument>
                           </Assign.To>
@@ -297,8 +297,8 @@
                             <InArgument x:TypeArguments="x:String">["Erro encontrado, informação(es) faltante(s):"+mensagemLogBody]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{idLivro, nomeLivro, nomeAutor, numPaginas, preçoDolar, precoEuro, melhorPreco, status, tipoCapa}]" DataTable="[dtOutput]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="524.8,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_5" />
-                        <Assign DisplayName="Limpa a variável com a mensagem de erro" sap:VirtualizedContainerService.HintSize="524.8,60" sap2010:WorkflowViewState.IdRef="Assign_26">
+                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{idLivro, nomeLivro, nomeAutor, numPaginas, preçoDolar, precoEuro, melhorPreco, status, tipoCapa}]" DataTable="[dtOutput]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="526,22" sap2010:WorkflowViewState.IdRef="AddDataRow_5" />
+                        <Assign DisplayName="Limpa a variável com a mensagem de erro" sap:VirtualizedContainerService.HintSize="526,60" sap2010:WorkflowViewState.IdRef="Assign_26">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[mensagemLogBody]</OutArgument>
                           </Assign.To>
@@ -309,14 +309,14 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Mensagem de sucesso no log" sap:VirtualizedContainerService.HintSize="375.2,589.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                      <Sequence DisplayName="Mensagem de sucesso no log" sap:VirtualizedContainerService.HintSize="376,586" sap2010:WorkflowViewState.IdRef="Sequence_21">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Assign DisplayName="Monitoramento no log" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_28">
+                        <Assign DisplayName="Monitoramento no log" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_28">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[mensagemLogBody]</OutArgument>
                           </Assign.To>
@@ -324,8 +324,8 @@
                             <InArgument x:TypeArguments="x:String">["E-mail processado "+idLivro+" contém os seguintes valores: "+nomeLivro+", "+nomeAutor+", "+numPaginas+", "+tipoCapa]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:AppendLine DisplayName="Append Line" FileName="[&quot;C:\Squad2\logs\&quot;+nomeLog]" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[DateTime.Now.ToString(&quot;(HH_mm_ss) &quot;)+mensagemLogBody]" UseDefaultEncoding="False" />
-                        <Assign DisplayName="Limpa a variável com a mensagem de erro" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_27">
+                        <ui:AppendLine DisplayName="Append Line" FileName="[&quot;C:\Squad2\logs\&quot;+nomeLog]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_3" Text="[DateTime.Now.ToString(&quot;(HH_mm_ss) &quot;)+mensagemLogBody]" UseDefaultEncoding="False" />
+                        <Assign DisplayName="Limpa a variável com a mensagem de erro" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_27">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[mensagemLogBody]</OutArgument>
                           </Assign.To>
@@ -333,7 +333,7 @@
                             <InArgument x:TypeArguments="x:String">[string.Empty]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <Assign DisplayName="Atualização do statusRPA" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_31">
+                        <Assign DisplayName="Atualização do statusRPA" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_31">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[status]</OutArgument>
                           </Assign.To>
@@ -341,14 +341,14 @@
                             <InArgument x:TypeArguments="x:String">["-"]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{idLivro, nomeLivro, nomeAutor, numPaginas, preçoDolar, precoEuro, melhorPreco, status, tipoCapa}]" DataTable="[dtOutput]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{idLivro, nomeLivro, nomeAutor, numPaginas, preçoDolar, precoEuro, melhorPreco, status, tipoCapa}]" DataTable="[dtOutput]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
                       </Sequence>
                     </If.Else>
                   </If>
                 </Sequence>
               </If.Then>
               <If.Else>
-                <ui:AppendLine DisplayName="Append Line" FileName="[&quot;C:\Squad2\logs\&quot;+ nomeLog]" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[DateTime.Now.ToString(&quot;(HH_mm_ss)&quot;)+&quot; E-mail contém subject inválido: &quot; + mail.Subject]" UseDefaultEncoding="False" />
+                <ui:AppendLine DisplayName="Append Line" FileName="[&quot;C:\Squad2\logs\&quot;+ nomeLog]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[DateTime.Now.ToString(&quot;(HH_mm_ss)&quot;)+&quot; E-mail contém subject inválido: &quot; + mail.Subject]" UseDefaultEncoding="False" />
               </If.Else>
             </If>
           </Sequence>
@@ -361,21 +361,21 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEach>
-    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="1481.6,546.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="[&quot;C:\Squad2\processando\&quot; + nomePlanilha]">
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="1488,542" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="[&quot;C:\Squad2\processando\&quot; + nomePlanilha]">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,436.8" sap2010:WorkflowViewState.IdRef="Sequence_26">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,433" sap2010:WorkflowViewState.IdRef="Sequence_26">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ExcelWriteCell Cell="M1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_5" SheetName="Sheet1" Text="Cotação Euro" />
-            <ui:ExcelWriteCell Cell="N1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_6" SheetName="Sheet1" Text="Cotação Dolar" />
-            <ui:ExcelWriteRange AddHeaders="True" DataTable="[dtOutput]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_2" SheetName="Sheet1" StartingCell="A1" />
+            <ui:ExcelWriteCell Cell="M1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_5" SheetName="Planilha1" Text="Cotação Euro" />
+            <ui:ExcelWriteCell Cell="N1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_6" SheetName="Planilha1" Text="Cotação Dolar" />
+            <ui:ExcelWriteRange AddHeaders="True" DataTable="[dtOutput]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_2" SheetName="Planilha1" StartingCell="A1" />
           </Sequence>
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>

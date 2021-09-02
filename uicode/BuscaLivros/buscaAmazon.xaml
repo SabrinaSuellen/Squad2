@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1756,7341</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1827,7079</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>buscaAmazonUsa_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="43">
@@ -94,10 +94,9 @@
       <AssemblyReference>DocumentFormat.OpenXml</AssemblyReference>
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Sequência que faz a busca do livro solicitado no site da Amazon USA" DisplayName="buscaAmazonUsa" sap:VirtualizedContainerService.HintSize="1313,7276" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Sequência que faz a busca do livro solicitado no site da Amazon USA" DisplayName="buscaAmazonUsa" sap:VirtualizedContainerService.HintSize="1313,7014" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="precoLivroString" />
       <Variable x:TypeArguments="x:String" Name="tipoLivro" />
@@ -113,6 +112,9 @@
       <Variable x:TypeArguments="x:Double" Name="conversaoUK" />
       <Variable x:TypeArguments="x:String" Name="diretorioPlanilha" />
       <Variable x:TypeArguments="x:String" Name="diretorioLogs" />
+      <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="precoFreteEnumerable" />
+      <Variable x:TypeArguments="x:String" Name="precoFreteString" />
+      <Variable x:TypeArguments="x:String" Name="campoFrete" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -188,14 +190,14 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ExcelReadRange AddHeaders="True" DataTable="[dadosLivrosDt]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
+            <ui:ExcelReadRange AddHeaders="True" DataTable="[dadosLivrosDt]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Planilha1">
               <ui:ExcelReadRange.Range>
                 <InArgument x:TypeArguments="x:String">
                   <Literal x:TypeArguments="x:String" Value="" />
                 </InArgument>
               </ui:ExcelReadRange.Range>
             </ui:ExcelReadRange>
-            <ui:ExcelReadCell Cell="M2" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_1" SheetName="Sheet1">
+            <ui:ExcelReadCell Cell="M2" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_1" SheetName="Planilha1">
               <ui:ExcelReadCell.Result>
                 <OutArgument x:TypeArguments="x:String">[cotacaoEuroSrt]</OutArgument>
               </ui:ExcelReadCell.Result>
@@ -208,7 +210,7 @@
                 <InArgument x:TypeArguments="x:Decimal">[Convert.ToDecimal(Split(cotacaoEuroSrt," ")(1))]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ExcelReadCell Cell="N2" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_2" SheetName="Sheet1">
+            <ui:ExcelReadCell Cell="N2" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_2" SheetName="Planilha1">
               <ui:ExcelReadCell.Result>
                 <OutArgument x:TypeArguments="x:String">[cotacaoDolarSrt]</OutArgument>
               </ui:ExcelReadCell.Result>
@@ -230,13 +232,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ExcelApplicationScope>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each para varrer cada linha que equivale a um livro na planilha" DataTable="[dadosLivrosDt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1271,5528" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each para varrer cada linha que equivale a um livro na planilha" DataTable="[dadosLivrosDt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1271,5266" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="rowAtual" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1237,5377" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1237,5115" sap2010:WorkflowViewState.IdRef="Sequence_17">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -258,34 +260,33 @@
                 <InArgument x:TypeArguments="x:String">[rowAtual.Item("Tipo Capa").ToString]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each para busca em cada um dos sites&#xA;" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1195,5085" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[{&quot;https://www.amazon.co.uk/&quot;, &quot;https://www.amazon.com/&quot;}]">
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each para busca em cada um dos sites&#xA;" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1195,4823" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[{&quot;https://www.amazon.co.uk/&quot;, &quot;https://www.amazon.com/&quot;}]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:String">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:String" Name="linkSiteAmazon" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1159,4909" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1159,4647" sap2010:WorkflowViewState.IdRef="Sequence_12">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If sap2010:Annotation.AnnotationText="Valida se o item possui ou não algum impedimento de rodar" Condition="[rowAtual.Item(&quot;Status RPA&quot;).ToString = &quot;-&quot;]" sap:VirtualizedContainerService.HintSize="1117,4817" sap2010:WorkflowViewState.IdRef="If_3">
+                    <If sap2010:Annotation.AnnotationText="Valida se o item possui ou não algum impedimento de rodar" Condition="[rowAtual.Item(&quot;Status RPA&quot;).ToString = &quot;-&quot;]" sap:VirtualizedContainerService.HintSize="1117,4555" sap2010:WorkflowViewState.IdRef="If_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <uix:NApplicationCard sap2010:Annotation.AnnotationText="Abre o browser na página home da Amazon USA" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Amazon.com. Spend less. Smile more." sap:VirtualizedContainerService.HintSize="1081,4609" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+                        <uix:NApplicationCard sap2010:Annotation.AnnotationText="Abre o browser na página home da Amazon USA" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Amazon.com. Spend less. Smile more." sap:VirtualizedContainerService.HintSize="1081,4347" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
                           <uix:NApplicationCard.Body>
                             <ActivityAction x:TypeArguments="x:Object">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1047,4362" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1047,4100" sap2010:WorkflowViewState.IdRef="Sequence_2">
                                 <Sequence.Variables>
-                                  <Variable x:TypeArguments="x:String" Name="precoFreteString" />
                                   <Variable x:TypeArguments="x:String" Name="paisSite" />
                                 </Sequence.Variables>
                                 <sap:WorkflowViewStateService.ViewState>
@@ -358,14 +359,14 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:InjectJsScript>
-                                <If sap2010:Annotation.AnnotationText="IF que identifica o site buscado e utiliza funções diferentes para buscar o preço" Condition="[linkSiteAmazon = &quot;https://www.amazon.com/&quot;]" sap:VirtualizedContainerService.HintSize="1005,1861" sap2010:WorkflowViewState.IdRef="If_1">
+                                <If sap2010:Annotation.AnnotationText="IF que identifica o site buscado e utiliza funções diferentes para buscar o preço" Condition="[linkSiteAmazon = &quot;https://www.amazon.com/&quot;]" sap:VirtualizedContainerService.HintSize="1005,1599" sap2010:WorkflowViewState.IdRef="If_1">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <Sequence sap2010:Annotation.AnnotationText="Função de busca para Amazon USA&#xA;" sap:VirtualizedContainerService.HintSize="480,863" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                    <Sequence sap2010:Annotation.AnnotationText="Função de busca para Amazon USA&#xA;" sap:VirtualizedContainerService.HintSize="480,1409" sap2010:WorkflowViewState.IdRef="Sequence_6">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -443,31 +444,40 @@
                                           </Catch>
                                         </TryCatch.Catches>
                                       </TryCatch>
-                                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,183" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,729" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                                         <TryCatch.Try>
-                                          <ui:InjectJsScript InputParameter="{x:Null}" sap2010:Annotation.AnnotationText="Função JS extrai texto onde está o valor do frete e utiliza uma regex para extrai apenas o preço" DisplayName="Inject Js Script 'chrome.exe The'" sap:VirtualizedContainerService.HintSize="334,176" sap2010:WorkflowViewState.IdRef="InjectJsScript_3" ScriptCode="[diretorioScripts + &quot;\pegaPrecoFreteUSA.js&quot;]">
-                                            <ui:InjectJsScript.ScriptOutput>
-                                              <OutArgument x:TypeArguments="x:String">[precoFreteString]</OutArgument>
-                                            </ui:InjectJsScript.ScriptOutput>
-                                            <ui:InjectJsScript.Target>
-                                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="691e2739-c4b2-45e3-b770-47d511e6564e" InformativeScreenshot="8f728da27bce1be92c1bac5e5d5c222b">
-                                                <ui:Target.TimeoutMS>
-                                                  <InArgument x:TypeArguments="x:Int32" />
-                                                </ui:Target.TimeoutMS>
-                                                <ui:Target.WaitForReady>
-                                                  <InArgument x:TypeArguments="ui:WaitForReady" />
-                                                </ui:Target.WaitForReady>
-                                              </ui:Target>
-                                            </ui:InjectJsScript.Target>
+                                          <Sequence sap:VirtualizedContainerService.HintSize="376,502" sap2010:WorkflowViewState.IdRef="Sequence_28">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                          </ui:InjectJsScript>
+                                            <uix:NGetText sap2010:Annotation.AnnotationText="Pega todo o  texto do campo de frete e envia para um código JS que executa a regex que pega preço" ContinueOnError="True" DisplayName="Get Text 'No Import'" sap:VirtualizedContainerService.HintSize="334,208" sap2010:WorkflowViewState.IdRef="NGetText_3" Timeout="10">
+                                              <uix:NGetText.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://www.amazon.com/Get-Life-Chloe-Brown-Novel/dp/0062941208/ref=sr_1_1?dchild=1&amp;keywords=Get+A+Life%2C+Chloe+Brown&amp;qid=1630623427&amp;s=books&amp;sr=1-1" DesignTimeRectangle="1730, 327, 223, 38" ElementType="Text" FriendlyName="'No Import'" FullSelectorArgument="&lt;webctrl parentid='exports_desktop_qualifiedBuybox_tlc_feature_div' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='exports_desktop_qualifiedBuybox_tlc_feature_div' tag='SPAN' type='' /&gt;" InformativeScreenshot="da0060a7f83f126235a185941ed2313b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://images-na.ssl-images-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41SIz69qHYL.css,31qGOnSAToL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11bGSgD5pDL.css,01Dm5eKVxwL.css,01IdKcBuAdL.c*' title='Get a Life, Chloe Brown: A Novel (The Brown Sisters, 1): Hibbert, Talia: 9780062941206: Amazon.com: Books' /&gt;" SearchSteps="FuzzySelector" />
+                                              </uix:NGetText.Target>
+                                              <uix:NGetText.Text>
+                                                <OutArgument x:TypeArguments="x:String">[campoFrete]</OutArgument>
+                                              </uix:NGetText.Text>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </uix:NGetText>
+                                            <ui:Matches BuilderPattern="\d*\.\d{2}" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[campoFrete]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;\\d*\\.\\d{2}&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d*\.\d{2}" RegexOption="IgnoreCase" Result="[precoFreteEnumerable]" />
+                                            <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_41">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[precoFreteString]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[precoFreteEnumerable(0).tostring]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                          </Sequence>
                                         </TryCatch.Try>
                                         <TryCatch.Catches>
-                                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -545,7 +555,7 @@
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence sap2010:Annotation.AnnotationText="Função de busca para Amazon UK" sap:VirtualizedContainerService.HintSize="480,1671" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                    <Sequence sap2010:Annotation.AnnotationText="Função de busca para Amazon UK" sap:VirtualizedContainerService.HintSize="480,1398" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -623,29 +633,17 @@
                                           </Catch>
                                         </TryCatch.Catches>
                                       </TryCatch>
-                                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,1002" sap2010:WorkflowViewState.IdRef="TryCatch_4">
-                                        <TryCatch.Variables>
-                                          <Variable x:TypeArguments="x:String" Name="campoFrete" />
-                                        </TryCatch.Variables>
+                                      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,729" sap2010:WorkflowViewState.IdRef="TryCatch_4">
                                         <TryCatch.Try>
-                                          <Sequence sap:VirtualizedContainerService.HintSize="376,775" sap2010:WorkflowViewState.IdRef="Sequence_22">
-                                            <Sequence.Variables>
-                                              <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="precoFreteEnumerable" />
-                                            </Sequence.Variables>
+                                          <Sequence sap:VirtualizedContainerService.HintSize="376,502" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <uix:NGetText sap2010:Annotation.AnnotationText="Pega todo o  texto do campo de frete e envia para um código JS que executa a regex que pega preço" ContinueOnError="True" DisplayName="Get Text 'Deliver to'" sap:VirtualizedContainerService.HintSize="334,208" sap2010:WorkflowViewState.IdRef="NGetText_2" Timeout="10">
+                                            <uix:NGetText sap2010:Annotation.AnnotationText="Pega todo o  texto do campo de frete e envia para um código JS que executa a regex que pega preço" ContinueOnError="True" DisplayName="Get Text '£18.82 delivery:'" sap:VirtualizedContainerService.HintSize="334,208" sap2010:WorkflowViewState.IdRef="NGetText_2" Timeout="10">
                                               <uix:NGetText.Target>
-                                                <uix:TargetAnchorable BrowserURL="https://www.amazon.co.uk/Malibu-Rising-Taylor-Jenkins-Reid/dp/1786331527/ref=sr_1_1?crid=JFD1LFRQVPWW&amp;dchild=1&amp;keywords=malibu+rising&amp;qid=1630520637&amp;sprefix=mali%2Caps%2C419&amp;sr=8-1" DesignTimeRectangle="1146, 401, 232, 20" FriendlyName="'£18.82 delivery:'" FullSelectorArgument="&lt;webctrl id='mir-layout-DELIVERY_BLOCK-slot-DELIVERY_MESSAGE' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mir-layout-DELIVERY_BLOCK-slot-DELIVERY_MESSAGE' tag='DIV' type='' aaname='£18.82 delivery:  ' /&gt;" InformativeScreenshot="d7c71e6ac28051c12c3a9df600a4f189.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://www.amazon.co.uk/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41SIz69qHYL.css,31qGOnSAToL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11bGSgD5pDL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2L.*' title='Malibu Rising: The new novel from the bestselling author of Daisy Jones &amp;amp; The Six: Amazon.co.uk: Jenkins Reid, Taylor: 9781786331526: Books' /&gt;" SearchSteps="FuzzySelector">
-                                                  <uix:TargetAnchorable.Anchors>
-                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                      <uix:Target DesignTimeRectangle="1167, 433, 211, 36" FriendlyName="'Deliver to'" FullSelectorArgument="&lt;webctrl id='contextualIngressPt' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='contextualIngressPt' tag='DIV' type='' aaname='   ' check:text='Deliver to Wellington - Ouro Preto 35400000‌' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
-                                                    </scg:List>
-                                                  </uix:TargetAnchorable.Anchors>
-                                                </uix:TargetAnchorable>
+                                                <uix:TargetAnchorable BrowserURL="https://www.amazon.co.uk/Vanishing-Half-Sunday-Times-Bestseller/dp/0349701474/ref=sr_1_1?crid=1TJ4MU01VMCDR&amp;dchild=1&amp;keywords=the+vanishing+half+book&amp;qid=1630622949&amp;sprefix=the+va%2Caps%2C474&amp;sr=8-1" DesignTimeRectangle="1726, 395, 240, 20" FriendlyName="'£18.82 delivery:'" FullSelectorArgument="&lt;webctrl id='mir-layout-DELIVERY_BLOCK-slot-DELIVERY_MESSAGE' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='mir-layout-DELIVERY_BLOCK-slot-DELIVERY_MESSAGE' tag='DIV' type='' aaname='£18.82 delivery:  ' /&gt;" InformativeScreenshot="c13bbaa2e0caea5f2489fc518efb1735.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://www.amazon.co.uk/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41SIz69qHYL.css,31qGOnSAToL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11bGSgD5pDL.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2L.*' title='The Vanishing Half: Shortlisted for the Women&amp;apos;s Prize 2021: Amazon.co.uk: Bennett, Brit: 9780349701479: Books' /&gt;" SearchSteps="FuzzySelector" />
                                               </uix:NGetText.Target>
                                               <uix:NGetText.Text>
                                                 <OutArgument x:TypeArguments="x:String">[campoFrete]</OutArgument>
@@ -656,21 +654,6 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                             </uix:NGetText>
-                                            <ui:InjectJsScript DisplayName="Inject Js Script 'chrome.exe Malibu'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="InjectJsScript_6" InputParameter="[campoFrete]" ScriptCode="[diretorioScripts + &quot;\regexPreco.js&quot;]">
-                                              <ui:InjectJsScript.ScriptOutput>
-                                                <OutArgument x:TypeArguments="x:String">[precoFreteString]</OutArgument>
-                                              </ui:InjectJsScript.ScriptOutput>
-                                              <ui:InjectJsScript.Target>
-                                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="ca510133-9784-4751-a2b2-1dfec2889a93" InformativeScreenshot="929dd8767c2661bdc0fd00ff574268c0">
-                                                  <ui:Target.TimeoutMS>
-                                                    <InArgument x:TypeArguments="x:Int32" />
-                                                  </ui:Target.TimeoutMS>
-                                                  <ui:Target.WaitForReady>
-                                                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                                                  </ui:Target.WaitForReady>
-                                                </ui:Target>
-                                              </ui:InjectJsScript.Target>
-                                            </ui:InjectJsScript>
                                             <ui:Matches BuilderPattern="\d*\.\d{2}" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[campoFrete]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;LIT&quot;,&quot;OperationName&quot;:&quot;Literal&quot;,&quot;OperationValue&quot;:&quot;\\d*\\.\\d{2}&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="\d*\.\d{2}" RegexOption="IgnoreCase" Result="[precoFreteEnumerable]" />
                                             <Assign sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="Assign_38">
                                               <Assign.To>
@@ -680,7 +663,6 @@
                                                 <InArgument x:TypeArguments="x:String">[precoFreteEnumerable(0).tostring]</InArgument>
                                               </Assign.Value>
                                             </Assign>
-                                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_9" Text="[precoFreteString]" />
                                           </Sequence>
                                         </TryCatch.Try>
                                         <TryCatch.Catches>
@@ -725,7 +707,7 @@
                                                     </Assign>
                                                   </If.Else>
                                                 </If>
-                                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="569,411" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="569,453" sap2010:WorkflowViewState.IdRef="CommentOut_4">
                                                   <ui:CommentOut.Body>
                                                     <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,375" sap2010:WorkflowViewState.IdRef="Sequence_27">
                                                       <sap:WorkflowViewStateService.ViewState>
@@ -981,7 +963,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ExcelWriteRange AddHeaders="True" DataTable="[dadosLivrosDt]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Sheet1" StartingCell="A1" />
+            <ui:ExcelWriteRange AddHeaders="True" DataTable="[dadosLivrosDt]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Planilha1" StartingCell="A1" />
           </Sequence>
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
