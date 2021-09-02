@@ -1,0 +1,15 @@
+﻿(17_55_56) E-mail contém subject inválido: Verify your new Amazon account
+(17_55_56) E-mail contém subject inválido: Verify your new Amazon account
+(17_55_56) E-mail contém subject inválido: Verificação das informações de segurança da conta da Microsoft
+(17_55_56) E-mail contém subject inválido: As informações de segurança da conta da Microsoft foram adicionadas
+(17_55_56) E-mail contém subject inválido: Seu novo OneDrive está quase pronto
+(17_55_56) E-mail contém subject inválido: Bem-vindo à sua nova conta do Outlook.com
+(17_55_56) E-mail contém subject inválido: Verify your new Amazon account
+(17_55_56) E-mail contém subject inválido: assunto não válido
+(17_55_56) E-mail processado 99685 contém os seguintes valores: The Vanishing Half, Brit Bennett, 133, Hardcover
+(17_55_56) E-mail processado 85423 contém os seguintes valores: Get A Life, Chloe Brown, Talia Hibbert, 384, Paperback
+(17_55_56) E-mail processado 75682 contém os seguintes valores: Verity, Colleen Hoover, 331, Paperback
+(17_55_56) E-mail processado 56980 contém os seguintes valores: The Moonlight Child, Karen McQuestion, 326, Paperback
+(17_55_56) E-mail processado 42558 contém os seguintes valores: You Have a Match, Emma Lord, 320, Hardcover
+(17_55_56) E-mail processado 33698 contém os seguintes valores: The Midnight Library, Matt Haig, 304, Hardcover
+(17_55_56) E-mail com ID 32568 contém os seguintes campos inválidos:  |nome do autor| 
