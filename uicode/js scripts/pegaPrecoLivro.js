@@ -8,6 +8,9 @@ function pegaPrecoLivro(element, tipoLivro){
         if(arrayItens[i].innerText.match(tipoLivro)){
 
             preco = arrayItens[i].innerText.match(/\d*\.\d{2}/g)[0];
+
+            //Clica na opção certa para mostrar as opções de frete adequadas
+            arrayItens[i].getElementsByTagName("span")[3].click()
             return preco;
         };
     };
