@@ -1,0 +1,43 @@
+﻿(13_33_18) E-mail contém subject inválido: amazon.co.uk, action needed: Sign-in
+(13_33_18) E-mail contém subject inválido: amazon.co.uk, action needed: Sign-in
+(13_33_18) E-mail contém subject inválido: amazon.co.uk, action needed: Sign-in
+(13_33_18) E-mail contém subject inválido: Verify your new Amazon account
+(13_33_18) E-mail contém subject inválido: Verify your new Amazon account
+(13_33_18) E-mail contém subject inválido: Verificação das informações de segurança da conta da Microsoft
+(13_33_18) E-mail contém subject inválido: As informações de segurança da conta da Microsoft foram adicionadas
+(13_33_18) E-mail contém subject inválido: Seu novo OneDrive está quase pronto
+(13_33_18) E-mail contém subject inválido: Bem-vindo à sua nova conta do Outlook.com
+(13_33_18) E-mail contém subject inválido: Verify your new Amazon account
+(13_33_18) E-mail contém subject inválido: assunto não válido
+(13_33_18) E-mail processado 99685 contém os seguintes valores: The Vanishing Half, Brit Bennett, 133, Hardcover
+(13_33_18) E-mail processado 85423 contém os seguintes valores: Get A Life, Chloe Brown, Talia Hibbert, 384, Paperback
+(13_33_18) E-mail processado 75682 contém os seguintes valores: Verity, Colleen Hoover, 331, Paperback
+(13_33_18) E-mail processado 56980 contém os seguintes valores: The Moonlight Child, Karen McQuestion, 326, Paperback
+(13_33_18) E-mail processado 42558 contém os seguintes valores: You Have a Match, Emma Lord, 320, Hardcover
+(13_33_18) E-mail processado 33698 contém os seguintes valores: The Midnight Library, Matt Haig, 304, Hardcover
+(13_33_18) E-mail com ID 32568 contém os seguintes campos inválidos:  |nome do autor| 
+(13_33_18) E-mail processado 26985 contém os seguintes valores: The Paper Palace, Miranda Cowley Heller, 400, Hardcover
+(13_33_18) E-mail com ID 26983 contém os seguintes campos inválidos:  |tipo de capa| 
+(13_33_18) E-mail com ID 23364 contém os seguintes campos inválidos:  |nome do livro| 
+(13_33_18) E-mail processado 22316 contém os seguintes valores: Wilder Girls, Rory Power, 368, Hardcover
+(13_33_18) E-mail processado 16987 contém os seguintes valores: The Seven Husbands of Evelyn Hugo, Taylor Jenkins Reid, 156, Hardcover
+(13_33_18) E-mail processado 15902 contém os seguintes valores: The Madness of Crowds, Louise Penny, 448, Hardcover
+03-09-2021 01:34- Realizada a busca do livro The Vanishing Halfcom capa do tipo Hardcover - -
+03-09-2021 01:34- Realizada a busca do livro The Vanishing Halfcom capa do tipo Hardcover - -
+03-09-2021 01:34- Realizada a busca do livro Get A Life, Chloe Browncom capa do tipo Paperback - -
+03-09-2021 01:34- Realizada a busca do livro Get A Life, Chloe Browncom capa do tipo Paperback - -
+03-09-2021 01:35- Realizada a busca do livro Veritycom capa do tipo Paperback - -
+03-09-2021 01:35- Realizada a busca do livro Veritycom capa do tipo Paperback - -
+03-09-2021 01:35- Realizada a busca do livro The Moonlight Childcom capa do tipo Paperback - -
+03-09-2021 01:35- Realizada a busca do livro The Moonlight Childcom capa do tipo Paperback - -
+03-09-2021 01:36- Realizada a busca do livro You Have a Matchcom capa do tipo Hardcover - -
+03-09-2021 01:36- Realizada a busca do livro You Have a Matchcom capa do tipo Hardcover - -
+03-09-2021 01:36- Realizada a busca do livro The Midnight Librarycom capa do tipo Hardcover - -
+03-09-2021 01:36- Realizada a busca do livro The Midnight Librarycom capa do tipo Hardcover - -
+03-09-2021 01:37- Realizada a busca do livro The Paper Palacecom capa do tipo Hardcover - -
+03-09-2021 01:37- Realizada a busca do livro The Paper Palacecom capa do tipo Hardcover - -
+03-09-2021 01:37- Realizada a busca do livro Wilder Girlscom capa do tipo Hardcover - Valor Indisponivel
+03-09-2021 01:37- Realizada a busca do livro The Seven Husbands of Evelyn Hugocom capa do tipo Hardcover - -
+03-09-2021 01:38- Realizada a busca do livro The Seven Husbands of Evelyn Hugocom capa do tipo Hardcover - Valor Indisponivel
+03-09-2021 01:38- Realizada a busca do livro The Madness of Crowdscom capa do tipo Hardcover - -
+03-09-2021 01:38- Realizada a busca do livro The Madness of Crowdscom capa do tipo Hardcover - -
