@@ -5341,14 +5341,14 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\welli\\.nuget\\packages\\": {}
+    "C:\\Users\\Lucas\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "BuscaLivros",
       "projectName": "BuscaLivros",
       "projectPath": "C:\\Squad2\\uicode\\BuscaLivros\\.local",
-      "packagesPath": "C:\\Users\\welli\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
       "outputPath": "C:\\Squad2\\uicode\\BuscaLivros\\.local"
     },
     "frameworks": {
@@ -5380,7 +5380,7 @@
             "version": "[1.8.0-preview, 1.8.0-preview]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\welli\\AppData\\Local\\UiPath\\app-21.4.4\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Lucas\\AppData\\Local\\UiPath\\app-21.4.4\\runtime.json"
       }
     }
   }
