@@ -5,10 +5,10 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1827,1830</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1756,1830</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>InsereCotacaoNaPlanilha_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="38">
+    <scg:List x:TypeArguments="x:String" Capacity="76">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -47,6 +47,8 @@
       <x:String>System.Reflection</x:String>
       <x:String>System.Runtime.InteropServices</x:String>
       <x:String>UiPath.Web.Activities</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -83,13 +85,14 @@
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="InsereCotacaoNaPlanilha" sap:VirtualizedContainerService.HintSize="476,1765" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:Double" Name="dolarCotationValue" />
-      <Variable x:TypeArguments="x:Double" Name="euroCotationValue" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="dolarCotationValue" />
+      <Variable x:TypeArguments="ui:GenericValue" Name="euroCotationValue" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -138,10 +141,10 @@
       </ui:DeserializeJson>
       <Assign sap2010:Annotation.AnnotationText="Extrai valor do dolar do json e atribui a variavel&#xA;" DisplayName="Atribui valor do dolar a variável" sap:VirtualizedContainerService.HintSize="334,117" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
-          <OutArgument x:TypeArguments="x:Double">[dolarCotationValue]</OutArgument>
+          <OutArgument x:TypeArguments="ui:GenericValue">[dolarCotationValue]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:Double">[Convert.ToDouble(jsonObject("USDBRL")("high").ToString)]</InArgument>
+          <InArgument x:TypeArguments="ui:GenericValue">[Convert.ToDouble(jsonObject("USDBRL")("high").ToString)]</InArgument>
         </Assign.Value>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -151,10 +154,10 @@
       </Assign>
       <Assign sap2010:Annotation.AnnotationText="extrai valor do euro do json e atribui a variavel" DisplayName="Atribui valor do euro a variável" sap:VirtualizedContainerService.HintSize="334,102" sap2010:WorkflowViewState.IdRef="Assign_2">
         <Assign.To>
-          <OutArgument x:TypeArguments="x:Double">[euroCotationValue]</OutArgument>
+          <OutArgument x:TypeArguments="ui:GenericValue">[euroCotationValue]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:Double">[Convert.ToDouble(jsonObject("EURBRL")("high").ToString)]</InArgument>
+          <InArgument x:TypeArguments="ui:GenericValue">[Convert.ToDouble(jsonObject("EURBRL")("high").ToString)]</InArgument>
         </Assign.Value>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -186,8 +189,8 @@
                 </InArgument>
               </ui:ExcelReadRange.Range>
             </ui:ExcelReadRange>
-            <ui:ExcelWriteCell Cell="M2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="Planilha1" Text="[&quot;R$ &quot; + euroCotationValue.ToString]" />
-            <ui:ExcelWriteCell Cell="N2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="Planilha1" Text="[&quot;R$ &quot; + dolarCotationValue.ToString]" />
+            <ui:ExcelWriteCell Cell="M2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="Planilha1" Text="[euroCotationValue]" />
+            <ui:ExcelWriteCell Cell="N2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="Planilha1" Text="[dolarCotationValue]" />
             <ui:ExcelSetRangeColor Color="[color.LightGoldenrodYellow]" DisplayName="Set Range Color" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="ExcelSetRangeColor_2" Range="M1:N1" SheetName="Planilha1" />
             <ui:ExcelSetRangeColor Color="[color.LightGoldenrodYellow]" DisplayName="Set Range Color" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="ExcelSetRangeColor_1" Range="M2:N2" SheetName="Planilha1" />
           </Sequence>
