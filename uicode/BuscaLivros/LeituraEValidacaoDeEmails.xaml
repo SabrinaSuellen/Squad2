@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1054,2992</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1827,3201</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TestEmail_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="72">
@@ -81,10 +81,9 @@
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestEmail" sap:VirtualizedContainerService.HintSize="1025,2927" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TestEmail" sap:VirtualizedContainerService.HintSize="1025,3136" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strUser" />
       <Variable x:TypeArguments="ss:SecureString" Name="strPass" />
@@ -112,7 +111,7 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:BuildDataTable DataTable="[dtOutput]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="983,59" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;ID_x0020_E-mail&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Nome&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Autor&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;N_x00BA__x0020_de_x0020_Pág.&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Preço_x0020__x0024_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Preço_x0020__x20AC_&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Melhor_x0020_Preço&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Status_x0020_RPA&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Tipo_x0020_Capa&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <Sequence sap2010:Annotation.AnnotationText="Nessa sequência é feita a criação dos Logs de forma padronizada&#xA;" DisplayName="Criação dos Logs" sap:VirtualizedContainerService.HintSize="983,461" sap2010:WorkflowViewState.IdRef="Sequence_27">
+    <Sequence sap2010:Annotation.AnnotationText="Nessa sequência é feita a criação dos Logs de forma padronizada&#xA;" DisplayName="Criação dos Logs" sap:VirtualizedContainerService.HintSize="983,454" sap2010:WorkflowViewState.IdRef="Sequence_27">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -120,7 +119,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Assign sap2010:Annotation.AnnotationText="Definição do nome dos logs de acordo com o padrão definido" sap:VirtualizedContainerService.HintSize="334,104" sap2010:WorkflowViewState.IdRef="Assign_32">
+      <Assign sap2010:Annotation.AnnotationText="Definição do nome dos logs de acordo com o padrão definido" sap:VirtualizedContainerService.HintSize="334,102" sap2010:WorkflowViewState.IdRef="Assign_32">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[nomeLog]</OutArgument>
         </Assign.To>
@@ -133,7 +132,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <ui:CreateFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Criação dos logs na pasta indicada" DisplayName="Create File" sap:VirtualizedContainerService.HintSize="334,165" sap2010:WorkflowViewState.IdRef="CreateFile_1" Name="[nomeLog]" Path="C:\Squad2\logs">
+      <ui:CreateFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Criação dos logs na pasta indicada" DisplayName="Create File" sap:VirtualizedContainerService.HintSize="334,163" sap2010:WorkflowViewState.IdRef="CreateFile_1" Name="[nomeLog]" Path="C:\Squad2\logs">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -141,8 +140,8 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:CreateFile>
     </Sequence>
-    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="emailCredential" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="983,80" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[strPass]" Username="[strUser]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="983,292" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="emailCredential" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="983,79" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[strPass]" Username="[strUser]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="983,517" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -153,10 +152,10 @@
         <ui:GetIMAPMailMessages FilterExpression="{x:Null}" Password="{x:Null}" TimeoutMS="{x:Null}" DeleteMessages="False" DisplayName="Get IMAP Mail Messages" Email="[strUser]" EnableSSL="True" FilterExpressionCharacterSet="US-ASCII" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GetIMAPMailMessages_1" MailFolder="Inbox" MarkAsRead="False" Messages="[listMailMassages]" OnlyUnreadMessages="True" OrderByDate="OldestFirst" Port="993" SecureConnection="Auto" SecurePassword="[strPass]" Server="[serverEmail]" Top="100" />
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,355" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -164,35 +163,35 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="376,288" sap2010:WorkflowViewState.IdRef="Sequence_28">
+            <Sequence sap:VirtualizedContainerService.HintSize="376,286" sap2010:WorkflowViewState.IdRef="Sequence_28">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:AppendLine DisplayName="Append Line" FileName="[&quot;C:\Squad2\logs\&quot;+ nomeLog]" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="AppendLine_4" Text="[DateTime.Now.ToString(&quot;(HH_mm_ss)&quot;)+&quot; Falha ao se conectar com servidor do provedor de email&quot;]" UseDefaultEncoding="False" />
+              <ui:AppendLine DisplayName="Append Line" FileName="[&quot;C:\Squad2\logs\&quot;+ nomeLog]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_4" Text="[DateTime.Now.ToString(&quot;(HH_mm_ss)&quot;)+&quot; Falha ao se conectar com servidor do provedor de email&quot;]" UseDefaultEncoding="False" />
               <TerminateWorkflow DisplayName="Terminate Workflow" Exception="[exception]" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="TerminateWorkflow_2" />
             </Sequence>
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="983,1691" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[listMailMassages]">
+    <ui:ForEach x:TypeArguments="snm:MailMessage" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="983,1684" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[listMailMassages]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="snm:MailMessage">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="snm:MailMessage" Name="mail" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="947,1556" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="947,1550" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If Condition="[mail.Subject.ToString.Contains(&quot;Livro - ID&quot;)]" sap:VirtualizedContainerService.HintSize="905,1464" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[mail.Subject.ToString.Contains(&quot;Livro - ID&quot;)]" sap:VirtualizedContainerService.HintSize="905,1458" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
-                <Sequence sap:VirtualizedContainerService.HintSize="526,1304" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence sap:VirtualizedContainerService.HintSize="526,1300" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -278,7 +277,7 @@
                       </Assign.Value>
                     </Assign>
                   </Sequence>
-                  <If Condition="[String.IsNullOrWhiteSpace(nomeLivro) or String.IsNullOrWhiteSpace(nomeAutor) or String.IsNullOrWhiteSpace(numPaginas) or String.IsNullOrWhiteSpace(tipoCapa)]" DisplayName="Verifica se há campos nulos no body" sap:VirtualizedContainerService.HintSize="484,228" sap2010:WorkflowViewState.IdRef="If_10">
+                  <If Condition="[String.IsNullOrWhiteSpace(nomeLivro) or String.IsNullOrWhiteSpace(nomeAutor) or String.IsNullOrWhiteSpace(numPaginas) or String.IsNullOrWhiteSpace(tipoCapa)]" DisplayName="Verifica se há campos nulos no body" sap:VirtualizedContainerService.HintSize="484,224" sap2010:WorkflowViewState.IdRef="If_10">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -286,14 +285,14 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence DisplayName="Mensagem de erro Log/Email" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                      <Sequence DisplayName="Mensagem de erro Log/Email" sap:VirtualizedContainerService.HintSize="478,742" sap2010:WorkflowViewState.IdRef="Sequence_20">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence DisplayName="montagem mensagem de erro" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                        <Sequence DisplayName="montagem mensagem de erro" sap:VirtualizedContainerService.HintSize="436,66" sap2010:WorkflowViewState.IdRef="Sequence_18">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -363,7 +362,7 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:AppendLine>
                         </Sequence>
-                        <Assign DisplayName="Atualização do statusRPA" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_30">
+                        <Assign DisplayName="Atualização do statusRPA" sap:VirtualizedContainerService.HintSize="436,60" sap2010:WorkflowViewState.IdRef="Assign_30">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[status]</OutArgument>
                           </Assign.To>
@@ -371,18 +370,25 @@
                             <InArgument x:TypeArguments="x:String">["Erro encontrado, informação(es) faltante(s):"+mensagemLogBody]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{idLivro, nomeLivro, nomeAutor, numPaginas, preçoDolar, precoEuro, melhorPreco, status, tipoCapa}]" DataTable="[dtOutput]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="AddDataRow_5" />
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Envia email sobre os erros" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="EnvioEmailErros.xaml">
-                          <ui:InvokeWorkflowFile.Arguments>
-                            <InArgument x:TypeArguments="x:String" x:Key="assuntoEmail">
-                              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="mail.Subject.Trim" />
-                            </InArgument>
-                            <InArgument x:TypeArguments="x:String" x:Key="motivoErro">
-                              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="mensagemLogBody.Trim" />
-                            </InArgument>
-                          </ui:InvokeWorkflowFile.Arguments>
-                        </ui:InvokeWorkflowFile>
-                        <Assign DisplayName="Limpa a variável com a mensagem de erro" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_26">
+                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{idLivro, nomeLivro, nomeAutor, numPaginas, preçoDolar, precoEuro, melhorPreco, status, tipoCapa}]" DataTable="[dtOutput]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="436,22" sap2010:WorkflowViewState.IdRef="AddDataRow_5" />
+                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="436,282" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Envia email sobre os erros" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="EnvioEmailErros.xaml">
+                                <ui:InvokeWorkflowFile.Arguments>
+                                  <InArgument x:TypeArguments="x:String" x:Key="assuntoEmail">[mail.Subject.Trim]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="motivoErro">[mensagemLogBody.Trim]</InArgument>
+                                </ui:InvokeWorkflowFile.Arguments>
+                              </ui:InvokeWorkflowFile>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
+                        <Assign DisplayName="Limpa a variável com a mensagem de erro" sap:VirtualizedContainerService.HintSize="436,60" sap2010:WorkflowViewState.IdRef="Assign_26">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[mensagemLogBody]</OutArgument>
                           </Assign.To>
@@ -393,7 +399,7 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Sucesso na captura" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                      <Sequence DisplayName="Sucesso na captura" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_21">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -432,7 +438,7 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <ui:AppendLine DisplayName="Append Line" FileName="[&quot;C:\Squad2\logs\&quot;+ nomeLog]" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[DateTime.Now.ToString(&quot;(HH_mm_ss)&quot;)+&quot; E-mail contém subject inválido: &quot; + mail.Subject]" UseDefaultEncoding="False" />
+                <ui:AppendLine DisplayName="Append Line" FileName="[&quot;C:\Squad2\logs\&quot;+ nomeLog]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[DateTime.Now.ToString(&quot;(HH_mm_ss)&quot;)+&quot; E-mail contém subject inválido: &quot; + mail.Subject]" UseDefaultEncoding="False" />
               </If.Else>
             </If>
           </Sequence>
@@ -445,7 +451,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEach>
-    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Escreve a DataTable na Planilha" sap:VirtualizedContainerService.HintSize="983,52" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="[&quot;C:\Squad2\processando\&quot; + nomePlanilha]">
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Escreve a DataTable na Planilha" sap:VirtualizedContainerService.HintSize="983,51" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="[&quot;C:\Squad2\processando\&quot; + nomePlanilha]">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
