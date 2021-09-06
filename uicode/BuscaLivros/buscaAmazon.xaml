@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1827,8006</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1827,6797</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>buscaAmazonUsa_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="43">
@@ -97,7 +97,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Sequência que faz a busca do livro solicitado no site da Amazon USA" DisplayName="buscaAmazonUsa" sap:VirtualizedContainerService.HintSize="1575,7812" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Sequência que faz a busca do livro solicitado no site da Amazon USA" DisplayName="buscaAmazonUsa" sap:VirtualizedContainerService.HintSize="1313,6732" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="precoLivroString" />
       <Variable x:TypeArguments="x:String" Name="tipoLivro" />
@@ -107,10 +107,6 @@
       <Variable x:TypeArguments="x:String" Name="diretorioScripts" />
       <Variable x:TypeArguments="x:String" Name="linkSiteAmazon" />
       <Variable x:TypeArguments="sd:DataTable" Name="dadosLivrosDt" />
-      <Variable x:TypeArguments="x:Double" Name="conversaoUSA" />
-      <Variable x:TypeArguments="x:Decimal" Name="cotacaoDolar" />
-      <Variable x:TypeArguments="x:Decimal" Name="cotacaoEuro" />
-      <Variable x:TypeArguments="x:Double" Name="conversaoUK" />
       <Variable x:TypeArguments="x:String" Name="diretorioPlanilha" />
       <Variable x:TypeArguments="x:String" Name="diretorioLogs" />
       <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="precoFreteEnumerable" />
@@ -123,7 +119,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap2010:Annotation.AnnotationText="Extrai o endereço da Pasta Atual do projeto" sap:VirtualizedContainerService.HintSize="1533,102" sap2010:WorkflowViewState.IdRef="Assign_4">
+    <Assign sap2010:Annotation.AnnotationText="Extrai o endereço da Pasta Atual do projeto" sap:VirtualizedContainerService.HintSize="1271,102" sap2010:WorkflowViewState.IdRef="Assign_4">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[diretorioAtual]</OutArgument>
       </Assign.To>
@@ -136,7 +132,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <Assign sap2010:Annotation.AnnotationText="Atribui valor ao repositorio local onde estão os scripts JS" sap:VirtualizedContainerService.HintSize="1533,102" sap2010:WorkflowViewState.IdRef="Assign_34">
+    <Assign sap2010:Annotation.AnnotationText="Atribui valor ao repositorio local onde estão os scripts JS" sap:VirtualizedContainerService.HintSize="1271,102" sap2010:WorkflowViewState.IdRef="Assign_34">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[diretorioScripts]</OutArgument>
       </Assign.To>
@@ -149,7 +145,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <Assign sap2010:Annotation.AnnotationText="Atribui valor ao diretorio local onde está a planilha com os dados." sap:VirtualizedContainerService.HintSize="1533,102" sap2010:WorkflowViewState.IdRef="Assign_33">
+    <Assign sap2010:Annotation.AnnotationText="Atribui valor ao diretorio local onde está a planilha com os dados." sap:VirtualizedContainerService.HintSize="1271,102" sap2010:WorkflowViewState.IdRef="Assign_33">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[diretorioPlanilha]</OutArgument>
       </Assign.To>
@@ -162,7 +158,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <Assign sap2010:Annotation.AnnotationText="Atribui valor ao diretorio local onde está o log" sap:VirtualizedContainerService.HintSize="1533,102" sap2010:WorkflowViewState.IdRef="Assign_35">
+    <Assign sap2010:Annotation.AnnotationText="Atribui valor ao diretorio local onde está o log" sap:VirtualizedContainerService.HintSize="1271,102" sap2010:WorkflowViewState.IdRef="Assign_35">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[diretorioLogs]</OutArgument>
       </Assign.To>
@@ -175,13 +171,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="Abre a planilha com os dados preenchidos e coloca os dados em um DT" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="1533,689" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="[diretorioPlanilha]">
+    <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="Abre a planilha com os dados preenchidos e coloca os dados em um DT" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="1271,291" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="[diretorioPlanilha]">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,549" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,151" sap2010:WorkflowViewState.IdRef="Sequence_10">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="cotacaoEuroSrt" />
               <Variable x:TypeArguments="x:String" Name="cotacaoDolarSrt" />
@@ -198,32 +194,6 @@
                 </InArgument>
               </ui:ExcelReadRange.Range>
             </ui:ExcelReadRange>
-            <ui:ExcelReadCell Cell="M2" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_1" SheetName="Planilha1">
-              <ui:ExcelReadCell.Result>
-                <OutArgument x:TypeArguments="x:String">[cotacaoEuroSrt]</OutArgument>
-              </ui:ExcelReadCell.Result>
-            </ui:ExcelReadCell>
-            <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_39">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Decimal">[cotacaoEuro]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:Decimal">[Convert.ToDecimal(Split(cotacaoEuroSrt," ")(1))]</InArgument>
-              </Assign.Value>
-            </Assign>
-            <ui:ExcelReadCell Cell="N2" DisplayName="Read Cell" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="ExcelReadCell_2" SheetName="Planilha1">
-              <ui:ExcelReadCell.Result>
-                <OutArgument x:TypeArguments="x:String">[cotacaoDolarSrt]</OutArgument>
-              </ui:ExcelReadCell.Result>
-            </ui:ExcelReadCell>
-            <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_40">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Decimal">[cotacaoDolar]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:Decimal">[Convert.ToDecimal(Split(cotacaoDolarSrt," ")(1))]</InArgument>
-              </Assign.Value>
-            </Assign>
           </Sequence>
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
@@ -233,13 +203,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ExcelApplicationScope>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each para varrer cada linha que equivale a um livro na planilha" DataTable="[dadosLivrosDt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1533,6064" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each para varrer cada linha que equivale a um livro na planilha" DataTable="[dadosLivrosDt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1271,5282" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="rowAtual" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1499,5913" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1237,5131" sap2010:WorkflowViewState.IdRef="Sequence_17">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="statusRPA" />
             </Sequence.Variables>
@@ -248,7 +218,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Assign sap:VirtualizedContainerService.HintSize="1457,60" sap2010:WorkflowViewState.IdRef="Assign_14">
+            <Assign sap:VirtualizedContainerService.HintSize="1195,60" sap2010:WorkflowViewState.IdRef="Assign_14">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[nomeLivro]</OutArgument>
               </Assign.To>
@@ -256,7 +226,7 @@
                 <InArgument x:TypeArguments="x:String">[rowAtual.item("Nome").ToString]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="1457,60" sap2010:WorkflowViewState.IdRef="Assign_18">
+            <Assign sap:VirtualizedContainerService.HintSize="1195,60" sap2010:WorkflowViewState.IdRef="Assign_18">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[tipoLivro]</OutArgument>
               </Assign.To>
@@ -264,7 +234,7 @@
                 <InArgument x:TypeArguments="x:String">[rowAtual.Item("Tipo Capa").ToString]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="1457,60" sap2010:WorkflowViewState.IdRef="Assign_42">
+            <Assign sap:VirtualizedContainerService.HintSize="1195,60" sap2010:WorkflowViewState.IdRef="Assign_42">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[statusRPA]</OutArgument>
               </Assign.To>
@@ -274,32 +244,32 @@
                 </InArgument>
               </Assign.Value>
             </Assign>
-            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each para busca em cada um dos sites&#xA;" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1457,4559" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[{&quot;https://www.amazon.co.uk/&quot;, &quot;https://www.amazon.com/&quot;}]">
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each para busca em cada um dos sites&#xA;" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1195,4462" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[{&quot;https://www.amazon.co.uk/&quot;, &quot;https://www.amazon.com/&quot;}]">
               <ui:ForEach.Body>
                 <ActivityAction x:TypeArguments="x:String">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:String" Name="linkSiteAmazon" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1421,4383" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1159,4286" sap2010:WorkflowViewState.IdRef="Sequence_12">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If sap2010:Annotation.AnnotationText="Valida se o item possui ou não algum impedimento de rodar" Condition="[rowAtual.Item(&quot;Status RPA&quot;).ToString = &quot;-&quot;]" sap:VirtualizedContainerService.HintSize="1379,4291" sap2010:WorkflowViewState.IdRef="If_3">
+                    <If sap2010:Annotation.AnnotationText="Valida se o item possui ou não algum impedimento de rodar" Condition="[rowAtual.Item(&quot;Status RPA&quot;).ToString = &quot;-&quot; and rowAtual.Item(&quot;Melhor Preço&quot;).ToString.Length = 0]" sap:VirtualizedContainerService.HintSize="1117,4194" sap2010:WorkflowViewState.IdRef="If_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <uix:NApplicationCard sap2010:Annotation.AnnotationText="Abre o browser na página home da Amazon USA" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Amazon.com. Spend less. Smile more." sap:VirtualizedContainerService.HintSize="1343,4083" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+                        <uix:NApplicationCard sap2010:Annotation.AnnotationText="Abre o browser na página home da Amazon USA" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Amazon.com. Spend less. Smile more." sap:VirtualizedContainerService.HintSize="1081,3986" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
                           <uix:NApplicationCard.Body>
                             <ActivityAction x:TypeArguments="x:Object">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1309,3836" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1047,3739" sap2010:WorkflowViewState.IdRef="Sequence_2">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:String" Name="paisSite" />
                                 </Sequence.Variables>
@@ -308,7 +278,7 @@
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NClick sap2010:Annotation.AnnotationText="Clica na opção para selecionar um filtro as buscas" ClickType="Single" DisplayName="Click 'All Departments'" sap:VirtualizedContainerService.HintSize="1001,197" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left">
+                                <uix:NClick sap2010:Annotation.AnnotationText="Clica na opção para selecionar um filtro as buscas" ClickType="Single" DisplayName="Click 'All Departments'" sap:VirtualizedContainerService.HintSize="1005,197" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="https://www.amazon.com/" DesignTimeRectangle="239, 89, 201, 35" ElementType="DropDown" FriendlyName="'All Departments'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' aaname='Search in' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAM0AAAAnCAYAAACsY8yNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIoSURBVHhe7d0xaxNhHMdx34OTo+/Ewc35WQ4hSwmEghRcMmVottJDcOlQl051OJGCnEOhpNRKOiR06RKQgBzIQUha8gJ+5s5rPOGG/K95xMj3Az9o72mHQr7cJUsfPX7yVIyx1Uc0jBm3jObZ8xe6+PJVs9lM8/l8Y9e/uhLgUx5NFszt3V3li3DTNhgMij8N8COPJrvDVL0AN3FEA9/yaDb9kaw8ooFveTRVL75NHdHAN6IBjIgGMCIawIhoACOiAYyIBjAiGsCIaAAjogGMiAYwIhrA6AHRJLq5uNTN9z+vxXstHQ2L74dHau3FSpbn/kc08K1+NMN3ajinxuF16fpYJ22ng37xff9Arn2i8fLc/4gGvtWO5vqwoe77Y3WDUL3J/fWHRxNFkZrNZuWys6rfKY9o4Fu9aCY9hXksU/X2A4Xn0+JsPXeaqnBWCSYb0cC3WtFMz0MF+z1Ns6/PQrndU6X52foez8rhrBpMNqKBbzWiSXW669T9NFb6I1X6LVbXdRQn2dl639NksViCyUY08M0eTRKr4wJtbbfUKrb10qn9cbw454MA/P/M0SSfOwre/Ho0u7+WP67tRBoV0YRnxXucLJrt48X13z/re0QD38zRRDvlN/7F8g8GXikazTX68FqBK+42k0u9XdyF/ubdhmjgW60PAv7lEQ18IxrAiGgAI6IBjIgGMCIawIhoACOiAYyIBjAiGsCIaACjPBr+qROwKukn7204c2uM8uUAAAAASUVORK5CYII=" InformativeScreenshot="7f0d646464d47563d0fc79c0be032ccf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com. Spend less. Smile more.' /&gt;" SearchSteps="FuzzySelector, Image">
                                       <uix:TargetAnchorable.Anchors>
@@ -324,7 +294,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NClick>
-                                <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Digita as iniciais da catgoria Books e aperta enter para seleciona-la" ClickBeforeMode="Single" DisplayName="Type Into 'All Departments'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1001,268" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[&quot;bo&quot;+&quot;[k(enter)]&quot;]">
+                                <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Digita as iniciais da catgoria Books e aperta enter para seleciona-la" ClickBeforeMode="Single" DisplayName="Type Into 'All Departments'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1005,268" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[&quot;bo&quot;+&quot;[k(enter)]&quot;]">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable BrowserURL="https://www.amazon.com/" DesignTimeRectangle="239, 89, 201, 35" ElementType="DropDown" FriendlyName="'All Departments'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' aaname='Search in' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAM0AAAAnCAYAAACsY8yNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIoSURBVHhe7d0xaxNhHMdx34OTo+/Ewc35WQ4hSwmEghRcMmVottJDcOlQl051OJGCnEOhpNRKOiR06RKQgBzIQUha8gJ+5s5rPOGG/K95xMj3Az9o72mHQr7cJUsfPX7yVIyx1Uc0jBm3jObZ8xe6+PJVs9lM8/l8Y9e/uhLgUx5NFszt3V3li3DTNhgMij8N8COPJrvDVL0AN3FEA9/yaDb9kaw8ooFveTRVL75NHdHAN6IBjIgGMCIawIhoACOiAYyIBjAiGsCIaAAjogGMiAYwIhrA6AHRJLq5uNTN9z+vxXstHQ2L74dHau3FSpbn/kc08K1+NMN3ajinxuF16fpYJ22ng37xff9Arn2i8fLc/4gGvtWO5vqwoe77Y3WDUL3J/fWHRxNFkZrNZuWys6rfKY9o4Fu9aCY9hXksU/X2A4Xn0+JsPXeaqnBWCSYb0cC3WtFMz0MF+z1Ns6/PQrndU6X52foez8rhrBpMNqKBbzWiSXW669T9NFb6I1X6LVbXdRQn2dl639NksViCyUY08M0eTRKr4wJtbbfUKrb10qn9cbw454MA/P/M0SSfOwre/Ho0u7+WP67tRBoV0YRnxXucLJrt48X13z/re0QD38zRRDvlN/7F8g8GXikazTX68FqBK+42k0u9XdyF/ubdhmjgW60PAv7lEQ18IxrAiGgAI6IBjIgGMCIawIhoACOiAYyIBjAiGsCIaACjPBr+qROwKukn7204c2uM8uUAAAAASUVORK5CYII=" InformativeScreenshot="81105496e2e75c801b3bd32cce24d219.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com. Spend less. Smile more.' /&gt;" SearchSteps="FuzzySelector, Image">
                                       <uix:TargetAnchorable.Anchors>
@@ -340,7 +310,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NTypeInto>
-                                <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Digita o nome do livro que será buscado, o nome é retirado do dict fornecido" ClickBeforeMode="None" DisplayName="Type Into 'INPUT twotabsearchtextb…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1267,268" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[nomeLivro +&quot;[k(enter)]&quot;]">
+                                <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="Digita o nome do livro que será buscado, o nome é retirado do dict fornecido" ClickBeforeMode="None" DisplayName="Type Into 'INPUT twotabsearchtextb…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1005,268" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[nomeLivro +&quot;[k(enter)]&quot;]">
                                   <uix:NTypeInto.Target>
                                     <uix:TargetAnchorable BrowserURL="https://www.amazon.com/" DesignTimeRectangle="290, 90, 581, 38" ElementType="InputBox" FriendlyName="'INPUT twotabsearchtextb…'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAkkAAAAqCAYAAACnf8/pAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD9SURBVHhe7daxCYNQAEVRd7CydLwMmV4Lp7HPD4iEBO4GOQde8ya407ysw8zMzMx+N53nObZ9HwAAjPF6Pq5dkXQcx30DAPw3kQQAEEQSAEAQSQAAQSQBAASRBAAQRBIAQBBJAABBJAEABJEEABBEEgBAEEkAAEEkAQAEkQQAEEQSAEAQSQAAQSQBAASRBAAQRBIAQBBJAABBJAEABJEEABBEEgBAEEkAAEEkAQAEkQQAEEQSAEAQSQAAQSQBAASRBAAQRBIAQBBJAABBJAEABJEEABBEEgBAEEkAAEEkAQAEkQQAEH4iadv3+wYA+G+fSJqXdZiZmZnZ99bxBt0z1F4KAF0CAAAAAElFTkSuQmCC" InformativeScreenshot="729b30567933a90d9a489c9e55415123.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amazon.com. Spend less. Smile more.' /&gt;" SearchSteps="FuzzySelector, Image">
                                       <uix:TargetAnchorable.Anchors>
@@ -356,7 +326,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NTypeInto>
-                                <ui:InjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" sap2010:Annotation.AnnotationText="Seleciona o primeiro item do resultado da busca" DisplayName="Inject Js Script - Clica primeiro livro" sap:VirtualizedContainerService.HintSize="1267,165" sap2010:WorkflowViewState.IdRef="InjectJsScript_1" ScriptCode="[diretorioScripts + &quot;\clickPrimeiroLivro.js&quot;]">
+                                <ui:InjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" sap2010:Annotation.AnnotationText="Seleciona o primeiro item do resultado da busca" DisplayName="Inject Js Script - Clica primeiro livro" sap:VirtualizedContainerService.HintSize="1005,165" sap2010:WorkflowViewState.IdRef="InjectJsScript_1" ScriptCode="[diretorioScripts + &quot;\clickPrimeiroLivro.js&quot;]">
                                   <ui:InjectJsScript.Target>
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="525e7668-5c22-4595-a39c-fe44622b83ac" InformativeScreenshot="54e45b14bfa5c51ffd2eb5cebfda9104" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div' parentid='search' tag='DIV' /&gt;">
                                       <ui:Target.TimeoutMS>
@@ -373,14 +343,14 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:InjectJsScript>
-                                <If sap2010:Annotation.AnnotationText="IF que identifica o site buscado e utiliza funções diferentes para buscar o preço" Condition="[linkSiteAmazon = &quot;https://www.amazon.com/&quot;]" sap:VirtualizedContainerService.HintSize="1267,1436" sap2010:WorkflowViewState.IdRef="If_1">
+                                <If sap2010:Annotation.AnnotationText="IF que identifica o site buscado e utiliza funções diferentes para buscar o preço" Condition="[linkSiteAmazon = &quot;https://www.amazon.com/&quot;]" sap:VirtualizedContainerService.HintSize="1005,1599" sap2010:WorkflowViewState.IdRef="If_1">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <Sequence sap2010:Annotation.AnnotationText="Função de busca para Amazon USA&#xA;" sap:VirtualizedContainerService.HintSize="480,1246" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                    <Sequence sap2010:Annotation.AnnotationText="Função de busca para Amazon USA&#xA;" sap:VirtualizedContainerService.HintSize="480,1409" sap2010:WorkflowViewState.IdRef="Sequence_6">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -395,7 +365,7 @@
                                           <InArgument x:TypeArguments="x:String">USA</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <TryCatch sap2010:Annotation.AnnotationText="JS Script que realiza a busca dos preços de acordo com o tipo especificado,&#xA;caso o valor não seja encontrado a variável preço é preenchida com &quot;null&quot;" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,240" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                                      <TryCatch sap2010:Annotation.AnnotationText="JS Script que realiza a busca dos preços de acordo com o tipo especificado,&#xA;caso o valor não seja encontrado a variável preço é preenchida com &quot;null&quot;" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,403" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -419,7 +389,7 @@
                                           </ui:InjectJsScript>
                                         </TryCatch.Try>
                                         <TryCatch.Catches>
-                                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -533,7 +503,7 @@
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence sap2010:Annotation.AnnotationText="Função de busca para Amazon UK" sap:VirtualizedContainerService.HintSize="480,1235" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                    <Sequence sap2010:Annotation.AnnotationText="Função de busca para Amazon UK" sap:VirtualizedContainerService.HintSize="480,1398" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -548,7 +518,7 @@
                                           <InArgument x:TypeArguments="x:String">UK</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <TryCatch sap2010:Annotation.AnnotationText="JS Script que realiza a busca dos preços de acordo com o tipo especificado,&#xA;caso o valor não seja encontrado a variável preço é preenchida com &quot;null&quot;" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,240" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                                      <TryCatch sap2010:Annotation.AnnotationText="JS Script que realiza a busca dos preços de acordo com o tipo especificado,&#xA;caso o valor não seja encontrado a variável preço é preenchida com &quot;null&quot;" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,403" sap2010:WorkflowViewState.IdRef="TryCatch_5">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -572,7 +542,7 @@
                                           </ui:InjectJsScript>
                                         </TryCatch.Try>
                                         <TryCatch.Catches>
-                                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                                          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_5">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -687,7 +657,7 @@
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <TryCatch sap2010:Annotation.AnnotationText="Realiza a soma dos valores, caso algum deles seja invalido, retorna zero" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1267,391" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                                <TryCatch sap2010:Annotation.AnnotationText="Realiza a soma dos valores, caso algum deles seja invalido, retorna zero" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1005,391" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -739,20 +709,20 @@
                                     </Catch>
                                   </TryCatch.Catches>
                                 </TryCatch>
-                                <If sap2010:Annotation.AnnotationText="Adiciona ao DT os devidos preços finais de acordo com o site buscado" Condition="[linkSiteAmazon = &quot;https://www.amazon.com/&quot;]" sap:VirtualizedContainerService.HintSize="1267,605" sap2010:WorkflowViewState.IdRef="If_2">
+                                <If sap2010:Annotation.AnnotationText="Adiciona ao DT os devidos preços finais de acordo com o site buscado" Condition="[linkSiteAmazon = &quot;https://www.amazon.com/&quot;]" sap:VirtualizedContainerService.HintSize="1005,345" sap2010:WorkflowViewState.IdRef="If_2">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                   <If.Then>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="611,415" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                    <Sequence sap:VirtualizedContainerService.HintSize="304,155" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Assign sap:VirtualizedContainerService.HintSize="569,61" sap2010:WorkflowViewState.IdRef="Assign_15">
+                                      <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_15">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:Object">[rowAtual.Item("Preço $")]</OutArgument>
                                         </Assign.To>
@@ -760,32 +730,10 @@
                                           <InArgument x:TypeArguments="x:String">[valorTotalCompra]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <If Condition="[valorTotalCompra &lt;&gt; &quot;inválido&quot;]" sap:VirtualizedContainerService.HintSize="569,220" sap2010:WorkflowViewState.IdRef="If_9">
-                                        <If.Then>
-                                          <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_29">
-                                            <Assign.To>
-                                              <OutArgument x:TypeArguments="x:Double">[conversaoUSA]</OutArgument>
-                                            </Assign.To>
-                                            <Assign.Value>
-                                              <InArgument x:TypeArguments="x:Double">[CDbl(valorTotalCompra) * cotacaoDolar]</InArgument>
-                                            </Assign.Value>
-                                          </Assign>
-                                        </If.Then>
-                                        <If.Else>
-                                          <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_47">
-                                            <Assign.To>
-                                              <OutArgument x:TypeArguments="x:Double">[conversaoUSA]</OutArgument>
-                                            </Assign.To>
-                                            <Assign.Value>
-                                              <InArgument x:TypeArguments="x:Double">0</InArgument>
-                                            </Assign.Value>
-                                          </Assign>
-                                        </If.Else>
-                                      </If>
                                     </Sequence>
                                   </If.Then>
                                   <If.Else>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="611,415" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                    <Sequence sap:VirtualizedContainerService.HintSize="304,155" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                       <Sequence.Variables>
                                         <Variable x:TypeArguments="x:String" Name="variable1" />
                                       </Sequence.Variables>
@@ -794,7 +742,7 @@
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Assign sap:VirtualizedContainerService.HintSize="569,61" sap2010:WorkflowViewState.IdRef="Assign_16">
+                                      <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_16">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:Object">[rowAtual.Item("Preço €")]</OutArgument>
                                         </Assign.To>
@@ -802,32 +750,10 @@
                                           <InArgument x:TypeArguments="x:String">[valorTotalCompra]</InArgument>
                                         </Assign.Value>
                                       </Assign>
-                                      <If Condition="[valorTotalCompra &lt;&gt; &quot;inválido&quot;]" sap:VirtualizedContainerService.HintSize="569,220" sap2010:WorkflowViewState.IdRef="If_10">
-                                        <If.Then>
-                                          <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_30">
-                                            <Assign.To>
-                                              <OutArgument x:TypeArguments="x:Double">[conversaoUK]</OutArgument>
-                                            </Assign.To>
-                                            <Assign.Value>
-                                              <InArgument x:TypeArguments="x:Double">[CDbl(valorTotalCompra) * cotacaoEuro]</InArgument>
-                                            </Assign.Value>
-                                          </Assign>
-                                        </If.Then>
-                                        <If.Else>
-                                          <Assign sap:VirtualizedContainerService.HintSize="262,61" sap2010:WorkflowViewState.IdRef="Assign_48">
-                                            <Assign.To>
-                                              <OutArgument x:TypeArguments="x:Double">[conversaoUSA]</OutArgument>
-                                            </Assign.To>
-                                            <Assign.Value>
-                                              <InArgument x:TypeArguments="x:Double">0</InArgument>
-                                            </Assign.Value>
-                                          </Assign>
-                                        </If.Else>
-                                      </If>
                                     </Sequence>
                                   </If.Else>
                                 </If>
-                                <ui:AppendLine DisplayName="Append Line" FileName="[diretorioLogs]" sap:VirtualizedContainerService.HintSize="1267,132" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[System.DateTime.Now.ToString(&quot;dd-MM-yyyy hh:mm&quot;) + &quot;- Realizada a busca do livro &quot; + nomeLivro + &quot;com capa do tipo &quot; + tipoLivro + &quot; - &quot; + rowAtual.Item(&quot;Status RPA&quot;).ToString]" UseDefaultEncoding="False" />
+                                <ui:AppendLine DisplayName="Append Line" FileName="[diretorioLogs]" sap:VirtualizedContainerService.HintSize="1005,132" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[System.DateTime.Now.ToString(&quot;dd-MM-yyyy hh:mm&quot;) + &quot;- Realizada a busca do livro &quot; + nomeLivro + &quot;com capa do tipo &quot; + tipoLivro + &quot; - &quot; + rowAtual.Item(&quot;Status RPA&quot;).ToString]" UseDefaultEncoding="False" />
                               </Sequence>
                             </ActivityAction>
                           </uix:NApplicationCard.Body>
@@ -851,68 +777,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ForEach>
-            <If Condition="[rowAtual.item(&quot;Status RPA&quot;).ToString = &quot;-&quot;]" sap:VirtualizedContainerService.HintSize="1457,645" sap2010:WorkflowViewState.IdRef="If_13">
-              <If.Then>
-                <If Condition="[conversaoUK  * conversaoUSA = 0]" sap:VirtualizedContainerService.HintSize="1225,468" sap2010:WorkflowViewState.IdRef="If_11">
-                  <If.Then>
-                    <Sequence sap:VirtualizedContainerService.HintSize="611,310" sap2010:WorkflowViewState.IdRef="Sequence_30">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <If Condition="[conversaoUK = 0]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_12">
-                        <If.Then>
-                          <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_49">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:Object">[rowAtual.item("Melhor Preço")]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:Object">[conversaoUSA]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                        </If.Then>
-                        <If.Else>
-                          <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_50">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:Object">[rowAtual.item("Melhor Preço")]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:Object">[conversaoUK]</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                        </If.Else>
-                      </If>
-                    </Sequence>
-                  </If.Then>
-                  <If.Else>
-                    <If Condition="[conversaoUSA &lt;= conversaoUK]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_7">
-                      <If.Then>
-                        <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_31">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:Object">[rowAtual.item("Melhor Preço")]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:Double">[conversaoUSA]</InArgument>
-                          </Assign.Value>
-                        </Assign>
-                      </If.Then>
-                      <If.Else>
-                        <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_32">
-                          <Assign.To>
-                            <OutArgument x:TypeArguments="x:Object">[rowAtual.Item("Melhor Preço")]</OutArgument>
-                          </Assign.To>
-                          <Assign.Value>
-                            <InArgument x:TypeArguments="x:Double">[conversaoUK]</InArgument>
-                          </Assign.Value>
-                        </Assign>
-                      </If.Else>
-                    </If>
-                  </If.Else>
-                </If>
-              </If.Then>
-            </If>
-            <If Condition="[rowAtual.Item(&quot;Status RPA&quot;) .ToString = &quot;-&quot; and statusRPA &lt;&gt; &quot;&quot;]" sap:VirtualizedContainerService.HintSize="1457,237" sap2010:WorkflowViewState.IdRef="If_8">
+            <If Condition="[rowAtual.Item(&quot;Status RPA&quot;) .ToString = &quot;-&quot; and statusRPA &lt;&gt; &quot;&quot;]" sap:VirtualizedContainerService.HintSize="1195,237" sap2010:WorkflowViewState.IdRef="If_8">
               <If.Then>
                 <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_46">
                   <Assign.To>
@@ -933,7 +798,15 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="1533,288" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="[diretorioPlanilha]">
+    <Assign sap:VirtualizedContainerService.HintSize="1271,60" sap2010:WorkflowViewState.IdRef="Assign_51">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd:DataTable">[dadosLivrosDt]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd:DataTable">[dadosLivrosDt.DefaultView.ToTable(True, "Preço $", "Preço €", "Melhor Preço", "Status RPA")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="1271,288" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="[diretorioPlanilha]">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
@@ -945,7 +818,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ExcelWriteRange AddHeaders="True" DataTable="[dadosLivrosDt]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Planilha1" StartingCell="A1" />
+            <ui:ExcelWriteRange AddHeaders="True" DataTable="[dadosLivrosDt]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Planilha1" StartingCell="F1" />
           </Sequence>
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
