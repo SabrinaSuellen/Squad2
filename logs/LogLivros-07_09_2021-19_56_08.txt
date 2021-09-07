@@ -1,0 +1,38 @@
+﻿(19_56_13) E-mail processado 15902 contém os seguintes valores: The Madness of Crowds, Louise Penny, 448, Hardcover
+(19_56_13) E-mail processado 16987 contém os seguintes valores: The Seven Husbands of Evelyn Hugo, Taylor Jenkins Reid, 156, Hardcover
+(19_56_13) E-mail processado 22316 contém os seguintes valores: Wilder Girls, Rory Power, 368, Hardcover
+(19_56_14) E-mail com ID 23364 contém os seguintes campos inválidos:  |nome do livro| 
+(19_56_14) E-mail com ID 26983 contém os seguintes campos inválidos:  |tipo de capa| 
+(19_56_14) E-mail processado 26985 contém os seguintes valores: The Paper Palace, Miranda Cowley Heller, 400, Hardcover
+(19_56_14) E-mail com ID 32568 contém os seguintes campos inválidos:  |nome do autor| 
+(19_56_14) E-mail processado 33698 contém os seguintes valores: The Midnight Library, Matt Haig, 304, Hardcover
+(19_56_14) E-mail processado 42558 contém os seguintes valores: You Have a Match, Emma Lord, 320, Hardcover
+(19_56_14) E-mail processado 56980 contém os seguintes valores: The Moonlight Child, Karen McQuestion, 326, Paperback
+(19_56_14) E-mail processado 75682 contém os seguintes valores: Verity, Colleen Hoover, 331, Paperback
+(19_56_14) E-mail processado 85423 contém os seguintes valores: Get A Life, Chloe Brown, Talia Hibbert, 384, Paperback
+(19_56_14) E-mail processado 99685 contém os seguintes valores: The Vanishing Half, Brit Bennett, 133, Hardcover
+(19_56_14) E-mail contém subject inválido: Bem-vindo à sua nova conta do Outlook.com
+(19_56_14) E-mail contém subject inválido: Verificação das informações de segurança da conta da Microsoft
+(19_56_14) E-mail contém subject inválido: Verify your new Amazon account
+(19_56_14) E-mail contém subject inválido: Verify your new Amazon account
+(19_56_16)Cotação inserida dentro da planilha, junta a coloração para sua marcação
+07-09-2021 07:56 - Login com falhas em System.String[] com usuário squad_two@outlook.com
+07-09-2021 07:56 - Login com falhas em System.String[] com usuário squad_two@outlook.com
+07-09-2021 07:57- Realizada a busca do livro The Madness of Crowds com capa do tipo Hardcover- Realizada com sucesso
+07-09-2021 07:57- Realizada a busca do livro The Seven Husbands of Evelyn Hugo com capa do tipo Hardcover- Realizada com sucesso
+07-09-2021 07:58- Realizada a busca do livro Wilder Girls com capa do tipo Hardcover-Preço inválido AMZ UK | Preço do frete inválido na AMZ USA | 
+07-09-2021 07:58- Realizada a busca do livro  com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 07:58- Realizada a busca do livro 1984 com capa do tipo - Realizada com sucesso
+07-09-2021 07:58- Realizada a busca do livro The Paper Palace com capa do tipo Hardcover- Realizada com sucesso
+07-09-2021 07:58- Realizada a busca do livro The Child in the Photo com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 07:59- Realizada a busca do livro The Midnight Library com capa do tipo Hardcover- Realizada com sucesso
+07-09-2021 07:59- Realizada a busca do livro You Have a Match com capa do tipo Hardcover- Realizada com sucesso
+07-09-2021 08:00- Realizada a busca do livro The Moonlight Child com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 08:00- Realizada a busca do livro Verity com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 08:01- Realizada a busca do livro Get A Life, Chloe Brown com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 08:02- Realizada a busca do livro The Vanishing Half com capa do tipo Hardcover- Realizada com sucesso
+(20_02_04) Nenhum email não lido encontrado
+(20_02_04)Planilha movida para Processados
+(20_02_07) E-mail com planilha enviado
+(20_02_08) E-mail com planilha enviado
+(20_02_09) E-mail com planilha enviado

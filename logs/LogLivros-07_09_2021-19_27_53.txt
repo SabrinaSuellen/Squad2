@@ -1,0 +1,14 @@
+﻿(19_27_56) E-mail contém subject inválido: Bem-vindo à sua nova conta do Outlook.com
+(19_27_56) E-mail contém subject inválido: Verificação das informações de segurança da conta da Microsoft
+(19_27_56) E-mail contém subject inválido: Verify your new Amazon account
+(19_27_56) E-mail contém subject inválido: Verify your new Amazon account
+(19_27_58)Cotação inserida dentro da planilha, junta a coloração para sua marcação
+07-09-2021 07:28 - Login com falhas em System.String[] com usuário squad_two@outlook.com
+07-09-2021 07:28 - Login com falhas em System.String[] com usuário squad_two@outlook.com
+(19_28_54) E-mail contém subject inválido: Bem-vindo à sua nova conta do Outlook.com
+(19_28_54) E-mail contém subject inválido: Verificação das informações de segurança da conta da Microsoft
+(19_28_54) E-mail contém subject inválido: Verify your new Amazon account
+(19_28_54) E-mail contém subject inválido: Verify your new Amazon account
+(19_28_55)Planilha movida para Processados
+(19_28_57) E-mail com planilha enviado
+(19_28_58) E-mail com planilha enviado

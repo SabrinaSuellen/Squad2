@@ -1,0 +1,102 @@
+﻿(19_33_58) E-mail processado 16987 contém os seguintes valores: The Seven Husbands of Evelyn Hugo, Taylor Jenkins Reid, 156, Hardcover
+(19_33_58) E-mail processado 22316 contém os seguintes valores: Wilder Girls, Rory Power, 368, Hardcover
+(19_33_58) E-mail com ID 23364 contém os seguintes campos inválidos:  |nome do livro| 
+(19_33_58) E-mail com ID 26983 contém os seguintes campos inválidos:  |tipo de capa| 
+(19_33_58) E-mail processado 26985 contém os seguintes valores: The Paper Palace, Miranda Cowley Heller, 400, Hardcover
+(19_33_58) E-mail com ID 32568 contém os seguintes campos inválidos:  |nome do autor| 
+(19_33_58) E-mail processado 33698 contém os seguintes valores: The Midnight Library, Matt Haig, 304, Hardcover
+(19_33_58) E-mail processado 42558 contém os seguintes valores: You Have a Match, Emma Lord, 320, Hardcover
+(19_33_58) E-mail processado 56980 contém os seguintes valores: The Moonlight Child, Karen McQuestion, 326, Paperback
+(19_33_58) E-mail processado 75682 contém os seguintes valores: Verity, Colleen Hoover, 331, Paperback
+(19_33_58) E-mail processado 99685 contém os seguintes valores: The Vanishing Half, Brit Bennett, 133, Hardcover
+(19_33_58) E-mail contém subject inválido: Bem-vindo à sua nova conta do Outlook.com
+(19_33_58) E-mail contém subject inválido: Verificação das informações de segurança da conta da Microsoft
+(19_33_58) E-mail contém subject inválido: Verify your new Amazon account
+(19_33_58) E-mail contém subject inválido: Verify your new Amazon account
+(19_34_00)Cotação inserida dentro da planilha, junta a coloração para sua marcação
+07-09-2021 07:34 - Login com falhas em System.String[] com usuário squad_two@outlook.com
+07-09-2021 07:34 - Login com falhas em System.String[] com usuário squad_two@outlook.com
+07-09-2021 07:36- Realizada a busca do livro The Seven Husbands of Evelyn Hugo com capa do tipo Hardcover-Preço do frete inválido na AMZ UK | 
+07-09-2021 07:37- Realizada a busca do livro Wilder Girls com capa do tipo Hardcover-Preço inválido AMZ UK | Preço do frete inválido na AMZ USA | 
+07-09-2021 07:37- Realizada a busca do livro  com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 07:37- Realizada a busca do livro 1984 com capa do tipo - Realizada com sucesso
+07-09-2021 07:37- Realizada a busca do livro The Paper Palace com capa do tipo Hardcover- Realizada com sucesso
+07-09-2021 07:37- Realizada a busca do livro The Child in the Photo com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 07:39- Realizada a busca do livro The Midnight Library com capa do tipo Hardcover- Realizada com sucesso
+07-09-2021 07:40- Realizada a busca do livro You Have a Match com capa do tipo Hardcover- Realizada com sucesso
+07-09-2021 07:41- Realizada a busca do livro The Moonlight Child com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 07:41- Realizada a busca do livro Verity com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 07:42- Realizada a busca do livro The Vanishing Half com capa do tipo Hardcover- Realizada com sucesso
+(19_42_33) E-mail processado 16987 contém os seguintes valores: The Seven Husbands of Evelyn Hugo, Taylor Jenkins Reid, 156, Hardcover
+(19_42_33) E-mail processado 22316 contém os seguintes valores: Wilder Girls, Rory Power, 368, Hardcover
+(19_42_33) E-mail com ID 23364 contém os seguintes campos inválidos:  |nome do livro| 
+(19_42_33) E-mail com ID 26983 contém os seguintes campos inválidos:  |tipo de capa| 
+(19_42_33) E-mail processado 26985 contém os seguintes valores: The Paper Palace, Miranda Cowley Heller, 400, Hardcover
+(19_42_33) E-mail com ID 32568 contém os seguintes campos inválidos:  |nome do autor| 
+(19_42_33) E-mail processado 33698 contém os seguintes valores: The Midnight Library, Matt Haig, 304, Hardcover
+(19_42_33) E-mail processado 42558 contém os seguintes valores: You Have a Match, Emma Lord, 320, Hardcover
+(19_42_33) E-mail processado 56980 contém os seguintes valores: The Moonlight Child, Karen McQuestion, 326, Paperback
+(19_42_34) E-mail processado 75682 contém os seguintes valores: Verity, Colleen Hoover, 331, Paperback
+(19_42_34) E-mail processado 99685 contém os seguintes valores: The Vanishing Half, Brit Bennett, 133, Hardcover
+(19_42_34) E-mail contém subject inválido: Bem-vindo à sua nova conta do Outlook.com
+(19_42_34) E-mail contém subject inválido: Verificação das informações de segurança da conta da Microsoft
+(19_42_34) E-mail contém subject inválido: Verify your new Amazon account
+(19_42_34) E-mail contém subject inválido: Verify your new Amazon account
+07-09-2021 07:43- Realizada a busca do livro The Seven Husbands of Evelyn Hugo com capa do tipo Hardcover-Preço do frete inválido na AMZ UK | 
+07-09-2021 07:43- Realizada a busca do livro Wilder Girls com capa do tipo Hardcover-Preço inválido AMZ UK | Preço do frete inválido na AMZ USA | 
+07-09-2021 07:43- Realizada a busca do livro  com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 07:43- Realizada a busca do livro 1984 com capa do tipo - Realizada com sucesso
+07-09-2021 07:44- Realizada a busca do livro The Paper Palace com capa do tipo Hardcover- Realizada com sucesso
+07-09-2021 07:44- Realizada a busca do livro The Child in the Photo com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 07:44- Realizada a busca do livro The Midnight Library com capa do tipo Hardcover- Realizada com sucesso
+07-09-2021 07:45- Realizada a busca do livro You Have a Match com capa do tipo Hardcover- Realizada com sucesso
+07-09-2021 07:46- Realizada a busca do livro The Moonlight Child com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 07:46- Realizada a busca do livro Verity com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 07:47- Realizada a busca do livro The Vanishing Half com capa do tipo Hardcover- Realizada com sucesso
+(19_47_06) E-mail processado 16987 contém os seguintes valores: The Seven Husbands of Evelyn Hugo, Taylor Jenkins Reid, 156, Hardcover
+(19_47_06) E-mail processado 22316 contém os seguintes valores: Wilder Girls, Rory Power, 368, Hardcover
+(19_47_06) E-mail com ID 23364 contém os seguintes campos inválidos:  |nome do livro| 
+(19_47_06) E-mail com ID 26983 contém os seguintes campos inválidos:  |tipo de capa| 
+(19_47_06) E-mail processado 26985 contém os seguintes valores: The Paper Palace, Miranda Cowley Heller, 400, Hardcover
+(19_47_06) E-mail com ID 32568 contém os seguintes campos inválidos:  |nome do autor| 
+(19_47_06) E-mail processado 33698 contém os seguintes valores: The Midnight Library, Matt Haig, 304, Hardcover
+(19_47_06) E-mail processado 42558 contém os seguintes valores: You Have a Match, Emma Lord, 320, Hardcover
+(19_47_06) E-mail processado 56980 contém os seguintes valores: The Moonlight Child, Karen McQuestion, 326, Paperback
+(19_47_06) E-mail processado 75682 contém os seguintes valores: Verity, Colleen Hoover, 331, Paperback
+(19_47_06) E-mail processado 99685 contém os seguintes valores: The Vanishing Half, Brit Bennett, 133, Hardcover
+(19_47_06) E-mail contém subject inválido: Bem-vindo à sua nova conta do Outlook.com
+(19_47_06) E-mail contém subject inválido: Verificação das informações de segurança da conta da Microsoft
+(19_47_06) E-mail contém subject inválido: Verify your new Amazon account
+(19_47_06) E-mail contém subject inválido: Verify your new Amazon account
+07-09-2021 07:47- Realizada a busca do livro The Seven Husbands of Evelyn Hugo com capa do tipo Hardcover-Preço do frete inválido na AMZ UK | 
+07-09-2021 07:48- Realizada a busca do livro Wilder Girls com capa do tipo Hardcover-Preço inválido AMZ UK | Preço do frete inválido na AMZ USA | 
+07-09-2021 07:48- Realizada a busca do livro  com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 07:48- Realizada a busca do livro 1984 com capa do tipo - Realizada com sucesso
+07-09-2021 07:48- Realizada a busca do livro The Paper Palace com capa do tipo Hardcover- Realizada com sucesso
+07-09-2021 07:48- Realizada a busca do livro The Child in the Photo com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 07:49- Realizada a busca do livro The Midnight Library com capa do tipo Hardcover- Realizada com sucesso
+07-09-2021 07:49- Realizada a busca do livro You Have a Match com capa do tipo Hardcover- Realizada com sucesso
+07-09-2021 07:50- Realizada a busca do livro The Moonlight Child com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 07:51- Realizada a busca do livro Verity com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 07:51- Realizada a busca do livro The Vanishing Half com capa do tipo Hardcover- Realizada com sucesso
+(19_51_38) E-mail processado 16987 contém os seguintes valores: The Seven Husbands of Evelyn Hugo, Taylor Jenkins Reid, 156, Hardcover
+(19_51_38) E-mail processado 22316 contém os seguintes valores: Wilder Girls, Rory Power, 368, Hardcover
+(19_51_38) E-mail com ID 23364 contém os seguintes campos inválidos:  |nome do livro| 
+(19_51_38) E-mail com ID 26983 contém os seguintes campos inválidos:  |tipo de capa| 
+(19_51_38) E-mail processado 26985 contém os seguintes valores: The Paper Palace, Miranda Cowley Heller, 400, Hardcover
+(19_51_38) E-mail com ID 32568 contém os seguintes campos inválidos:  |nome do autor| 
+(19_51_38) E-mail processado 33698 contém os seguintes valores: The Midnight Library, Matt Haig, 304, Hardcover
+(19_51_38) E-mail processado 42558 contém os seguintes valores: You Have a Match, Emma Lord, 320, Hardcover
+(19_51_38) E-mail processado 56980 contém os seguintes valores: The Moonlight Child, Karen McQuestion, 326, Paperback
+(19_51_38) E-mail processado 75682 contém os seguintes valores: Verity, Colleen Hoover, 331, Paperback
+(19_51_38) E-mail processado 99685 contém os seguintes valores: The Vanishing Half, Brit Bennett, 133, Hardcover
+(19_51_38) E-mail contém subject inválido: Bem-vindo à sua nova conta do Outlook.com
+(19_51_38) E-mail contém subject inválido: Verificação das informações de segurança da conta da Microsoft
+(19_51_38) E-mail contém subject inválido: Verify your new Amazon account
+(19_51_38) E-mail contém subject inválido: Verify your new Amazon account
+07-09-2021 07:52- Realizada a busca do livro The Seven Husbands of Evelyn Hugo com capa do tipo Hardcover-Preço do frete inválido na AMZ UK | 
+07-09-2021 07:52- Realizada a busca do livro Wilder Girls com capa do tipo Hardcover-Preço inválido AMZ UK | Preço do frete inválido na AMZ USA | 
+07-09-2021 07:52- Realizada a busca do livro  com capa do tipo Paperback- Realizada com sucesso
+07-09-2021 07:52- Realizada a busca do livro 1984 com capa do tipo - Realizada com sucesso
+07-09-2021 07:53- Realizada a busca do livro The Paper Palace com capa do tipo Hardcover- Realizada com sucesso
+07-09-2021 07:53- Realizada a busca do livro The Child in the Photo com capa do tipo Paperback- Realizada com sucesso
