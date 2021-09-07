@@ -3,6 +3,8 @@
     <x:Property Name="nomeLog" Type="InArgument(x:String)" />
     <x:Property Name="nomePlanilha" Type="InArgument(x:String)" />
     <x:Property Name="continuar" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="dtOutput" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="numLinhas" Type="OutArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
@@ -83,7 +85,6 @@
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="TestEmail" sap:VirtualizedContainerService.HintSize="1188,2135" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -101,7 +102,6 @@
       <Variable x:TypeArguments="x:String" Name="idLivro" />
       <Variable x:TypeArguments="x:String" Name="cleanResults" />
       <Variable x:TypeArguments="x:String" Name="mensagemLogBody" />
-      <Variable x:TypeArguments="sd:DataTable" Name="dtOutput" />
       <Variable x:TypeArguments="x:String" Name="dbNome" />
       <Variable x:TypeArguments="x:String" Default="[String.Empty]" Name="preçoDolar" />
       <Variable x:TypeArguments="x:String" Default="[String.Empty]" Name="precoEuro" />
@@ -109,11 +109,7 @@
       <Variable x:TypeArguments="x:String" Default="[String.Empty]" Name="status" />
       <Variable x:TypeArguments="x:String" Name="numLinhas" />
       <Variable x:TypeArguments="sd:DataTable" Name="getRange" />
-      <Variable x:TypeArguments="x:Int32" Name="contEmailValido">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="contEmailValido" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
