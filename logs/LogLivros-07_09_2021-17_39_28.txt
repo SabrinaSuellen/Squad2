@@ -1,0 +1,20 @@
+﻿(17_39_35) E-mail processado 15902 contém os seguintes valores: The Madness of Crowds, Louise Penny, 448, Hardcover
+(17_39_35) E-mail processado 16987 contém os seguintes valores: The Seven Husbands of Evelyn Hugo, Taylor Jenkins Reid, 156, Hardcover
+(17_39_36) E-mail processado 22316 contém os seguintes valores: Wilder Girls, Rory Power, 368, Hardcover
+(17_39_37) E-mail com ID 23364 contém os seguintes campos inválidos:  |nome do livro| 
+(17_39_38) E-mail com ID 26983 contém os seguintes campos inválidos:  |tipo de capa| 
+(17_39_38) E-mail processado 26985 contém os seguintes valores: The Paper Palace, Miranda Cowley Heller, 400, Hardcover
+(17_39_39) E-mail com ID 32568 contém os seguintes campos inválidos:  |nome do autor| 
+(17_39_40) E-mail processado 33698 contém os seguintes valores: The Midnight Library, Matt Haig, 304, Hardcover
+(17_39_40) E-mail processado 42558 contém os seguintes valores: You Have a Match, Emma Lord, 320, Hardcover
+(17_39_41) E-mail processado 56980 contém os seguintes valores: The Moonlight Child, Karen McQuestion, 326, Paperback
+(17_39_42) E-mail processado 75682 contém os seguintes valores: Verity, Colleen Hoover, 331, Paperback
+(17_39_42) E-mail processado 85423 contém os seguintes valores: Get A Life, Chloe Brown, Talia Hibbert, 384, Paperback
+(17_39_43) E-mail processado 99685 contém os seguintes valores: The Vanishing Half, Brit Bennett, 133, Hardcover
+(17_39_43) E-mail contém subject inválido: Bem-vindo à sua nova conta do Outlook.com
+(17_39_43) E-mail contém subject inválido: Verificação das informações de segurança da conta da Microsoft
+(17_39_43) E-mail contém subject inválido: Verify your new Amazon account
+(17_39_43) E-mail contém subject inválido: Verify your new Amazon account
+(17_39_49)Cotação inserida dentro da planilha, junta a coloração para sua marcação
+07-09-2021 05:40 - Login com falhas em System.String[] com usuário squad_two@outlook.com
+07-09-2021 05:41 - Login com falhas em System.String[] com usuário squad_two@outlook.com
