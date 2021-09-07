@@ -2,8 +2,8 @@
   <x:Members>
     <x:Property Name="nomePlanilha" Type="InArgument(x:String)" />
     <x:Property Name="nomeLog" Type="InArgument(x:String)" />
-    <x:Property Name="dadosLivrosDt" Type="InArgument(sd:DataTable)" />
     <x:Property Name="numLinhas" Type="InArgument(x:String)" />
+    <x:Property Name="dtOutput" Type="InArgument(sd:DataTable)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
@@ -173,7 +173,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each para varrer cada linha que equivale a um livro na planilha" DataTable="[dadosLivrosDt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1523,6482" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For each para varrer cada linha que equivale a um livro na planilha" DataTable="[dtOutput]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1523,6482" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
@@ -226,7 +226,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If sap2010:Annotation.AnnotationText="Valida se o item possui ou não algum impedimento de rodar" Condition="[rowAtual.Item(&quot;Status RPA&quot;).ToString = &quot;-&quot; And rowAtual.Item(&quot;Preço $&quot;).ToString.Length &lt; 2]" sap:VirtualizedContainerService.HintSize="1369,5064" sap2010:WorkflowViewState.IdRef="If_3">
+                    <If sap2010:Annotation.AnnotationText="Valida se o item possui ou não algum impedimento de rodar" Condition="[rowAtual.Item(&quot;Status RPA&quot;).ToString = &quot;-&quot;]" sap:VirtualizedContainerService.HintSize="1369,5064" sap2010:WorkflowViewState.IdRef="If_3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -905,7 +905,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ExcelWriteRange AddHeaders="True" DataTable="[dadosLivrosDt]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Planilha1" StartingCell="[&quot;A&quot;+numLinhas]" />
+            <ui:ExcelWriteRange AddHeaders="False" DataTable="[dtOutput]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Planilha1" StartingCell="[&quot;A&quot;+numLinhas]" />
           </Sequence>
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>

@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,2200</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1827,2200</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TestEmail_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="78">
@@ -107,7 +107,6 @@
       <Variable x:TypeArguments="x:String" Default="[String.Empty]" Name="precoEuro" />
       <Variable x:TypeArguments="x:String" Default="[String.Empty]" Name="melhorPreco" />
       <Variable x:TypeArguments="x:String" Default="[String.Empty]" Name="status" />
-      <Variable x:TypeArguments="x:String" Name="numLinhas" />
       <Variable x:TypeArguments="sd:DataTable" Name="getRange" />
       <Variable x:TypeArguments="x:Int32" Default="0" Name="contEmailValido" />
     </Sequence.Variables>
