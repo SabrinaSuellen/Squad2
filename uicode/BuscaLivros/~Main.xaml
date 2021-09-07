@@ -145,7 +145,7 @@
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">440,296</av:Point>
               <av:Size x:Key="ShapeSize">200,52.8</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">540,348.8 540,485.6</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">540,348.8 540,405.6</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CriaçãodaPlanilha" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="Criaçãodaplanilha.xaml">
@@ -158,9 +158,9 @@
             <FlowStep x:Name="__ReferenceID2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">440,485.6</av:Point>
+                  <av:Point x:Key="ShapeLocation">440,405.6</av:Point>
                   <av:Size x:Key="ShapeSize">200,128.8</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">540,614.4 540,655.6</av:PointCollection>
+                  <av:PointCollection x:Key="ConnectorLocation">540,534.4 540,595.6</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Insere cotação obtida na API na planilha&#xA;Argumentos: &#xA;- nome da planilha" DisplayName="Insere Cotação na Planillha" sap:VirtualizedContainerService.HintSize="200,128.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="InsereCotacaoNaPlanilha.xaml">
@@ -178,9 +178,9 @@
                 <FlowStep x:Name="__ReferenceID3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">440,655.6</av:Point>
+                      <av:Point x:Key="ShapeLocation">440,595.6</av:Point>
                       <av:Size x:Key="ShapeSize">200,128.8</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">540,784.4 540,831.6</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">540,724.4 540,771.6</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Realiza o login na amazon UK e USA para obter o frete dos livros&#xA;" DisplayName="Realiza Login Amazon UK/USA" sap:VirtualizedContainerService.HintSize="200,128.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="amazonLogin.xaml">
@@ -197,9 +197,9 @@
                     <FlowStep x:Name="__ReferenceID0">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">440,831.6</av:Point>
+                          <av:Point x:Key="ShapeLocation">440,771.6</av:Point>
                           <av:Size x:Key="ShapeSize">200,96.8</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">540,928.4 540,984</av:PointCollection>
+                          <av:PointCollection x:Key="ConnectorLocation">540,868.4 540,954</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Leitura, validação e escirta de emails na planilha" DisplayName="Leitura e Validação de Email" sap:VirtualizedContainerService.HintSize="200,96.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="LeituraEValidacaoDeEmails.xaml">
@@ -218,9 +218,9 @@
                         <FlowStep x:Name="__ReferenceID5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:Point x:Key="ShapeLocation">440,984</av:Point>
+                              <av:Point x:Key="ShapeLocation">440,954</av:Point>
                               <av:Size x:Key="ShapeSize">200,112.8</av:Size>
-                              <av:PointCollection x:Key="ConnectorLocation">540,1096 540,1142</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">540,1066.8 540,1132</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Realiza Busca nos sites da AMZ e elege o melhor preço encontrado" DisplayName="Busca Amazon" sap:VirtualizedContainerService.HintSize="200,112.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="buscaAmazon.xaml">
@@ -238,9 +238,9 @@
                             <FlowStep x:Name="__ReferenceID9">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <av:Point x:Key="ShapeLocation">440,1142</av:Point>
+                                  <av:Point x:Key="ShapeLocation">440,1132</av:Point>
                                   <av:Size x:Key="ShapeSize">200,96.8</av:Size>
-                                  <av:PointCollection x:Key="ConnectorLocation">540,1238 540,1276.5</av:PointCollection>
+                                  <av:PointCollection x:Key="ConnectorLocation">540,1228.8 540,1258.8 540.1,1258.8 540.1,1276.5</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Leitura, validação e escirta de emails na planilha" DisplayName="Leitura e Validação de Email" sap:VirtualizedContainerService.HintSize="200,96.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="LeituraEValidacaoDeEmails.xaml">
@@ -262,7 +262,7 @@
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <av:Point x:Key="ShapeLocation">500.5,1276.5</av:Point>
                                       <av:Size x:Key="ShapeSize">79.2,87.2</av:Size>
-                                      <av:PointCollection x:Key="TrueConnector">500.5,1320.1 410,1320.1 410,880 440,880</av:PointCollection>
+                                      <av:PointCollection x:Key="TrueConnector">500.5,1320.1 410,1320.1 410,820 440,820</av:PointCollection>
                                       <av:PointCollection x:Key="FalseConnector">579.5,1320 730,1320 730,1486</av:PointCollection>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
