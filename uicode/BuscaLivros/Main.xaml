@@ -72,6 +72,7 @@
       <Variable x:TypeArguments="x:String" Name="nomeLog" />
       <Variable x:TypeArguments="x:String" Name="diretorioLogs" />
       <Variable x:TypeArguments="x:String" Name="nomePlanilha" />
+      <Variable x:TypeArguments="x:Boolean" Name="continuar" />
     </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -140,7 +141,7 @@
               <av:PointCollection x:Key="ConnectorLocation">540,424 540,472</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence sap2010:Annotation.AnnotationText="Nessa sequência é criada a planilha com os cabeçalhos padronizados" DisplayName="Criação da planilha" sap:VirtualizedContainerService.HintSize="376,1901" sap2010:WorkflowViewState.IdRef="Sequence_11">
+          <Sequence sap2010:Annotation.AnnotationText="Nessa sequência é criada a planilha com os cabeçalhos padronizados" DisplayName="Criação da planilha" sap:VirtualizedContainerService.HintSize="200,128" sap2010:WorkflowViewState.IdRef="Sequence_11">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -256,8 +257,15 @@
               </sap:WorkflowViewStateService.ViewState>
               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Leitura, validação e escirta de emails na planilha" DisplayName="Leitura e Validação de Email" sap:VirtualizedContainerService.HintSize="200,96" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="LeituraEValidacaoDeEmails.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
-                  <InArgument x:TypeArguments="x:String" x:Key="nomeLog">[nomeLog]</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="nomePlanilha">[nomePlanilha]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="nomeLog">
+                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="nomeLog" />
+                  </InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="nomePlanilha">
+                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="nomePlanilha" />
+                  </InArgument>
+                  <OutArgument x:TypeArguments="x:Boolean" x:Key="continuar">
+                    <mva:VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="continuar" />
+                  </OutArgument>
                 </ui:InvokeWorkflowFile.Arguments>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -276,8 +284,12 @@
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Insere cotação obtida na API na planilha&#xA;Argumentos: &#xA;- nome da planilha" DisplayName="Insere Cotação na Planillha" sap:VirtualizedContainerService.HintSize="200,128" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="InsereCotacaoNaPlanilha.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
-                      <InArgument x:TypeArguments="x:String" x:Key="nomePlanilha">[nomePlanilha]</InArgument>
-                      <InArgument x:TypeArguments="x:String" x:Key="nomeLog">[nomeLog]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="nomePlanilha">
+                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="nomePlanilha" />
+                      </InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="nomeLog">
+                        <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="nomeLog" />
+                      </InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -335,8 +347,15 @@
                               </sap:WorkflowViewStateService.ViewState>
                               <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Leitura, validação e escirta de emails na planilha" DisplayName="Leitura e Validação de Email" sap:VirtualizedContainerService.HintSize="200,96" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="LeituraEValidacaoDeEmails.xaml">
                                 <ui:InvokeWorkflowFile.Arguments>
-                                  <InArgument x:TypeArguments="x:String" x:Key="nomeLog">[nomeLog]</InArgument>
-                                  <InArgument x:TypeArguments="x:String" x:Key="nomePlanilha">[nomePlanilha]</InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="nomeLog">
+                                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="nomeLog" />
+                                  </InArgument>
+                                  <InArgument x:TypeArguments="x:String" x:Key="nomePlanilha">
+                                    <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="nomePlanilha" />
+                                  </InArgument>
+                                  <OutArgument x:TypeArguments="x:Boolean" x:Key="continuar">
+                                    <mva:VisualBasicReference x:TypeArguments="x:Boolean" ExpressionText="continuar" />
+                                  </OutArgument>
                                 </ui:InvokeWorkflowFile.Arguments>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -346,6 +365,9 @@
                               </ui:InvokeWorkflowFile>
                               <FlowStep.Next>
                                 <FlowDecision x:Name="__ReferenceID8" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+                                  <FlowDecision.Condition>
+                                    <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="continuar" />
+                                  </FlowDecision.Condition>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
