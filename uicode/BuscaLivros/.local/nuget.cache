@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5r4cFwjUMQQNt7yOw+7gCQCL4PelC8P7h7MMEtWw2sUsBO9BCGmZJJfWCy881OlFsS5wqpdFYoMBc+P7B4RaDg==",
+  "dgSpecHash": "Za75EUqqTP6op1hj7/EYOyS/cVv7eYbTbUQnWa53qSEvI+hq+dOYpYC8Paqu/HeWvDhGV6rJI53b/umB3ex6jw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\caioa\\OneDrive\\Documentos\\GitHub\\Squad2\\uicode\\BuscaLivros\\.local\\",
+  "projectFilePath": "C:\\Squad2\\uicode\\BuscaLivros\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\caioa\\.nuget\\packages\\avalonedit\\6.0.1\\avalonedit.6.0.1.nupkg.sha512",
     "C:\\Users\\caioa\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
@@ -78,7 +78,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\caioa\\OneDrive\\Documentos\\GitHub\\Squad2\\uicode\\BuscaLivros\\.local",
+      "filePath": "C:\\Squad2\\uicode\\BuscaLivros\\.local",
       "message": "Microsoft.Extensions.Primitives 3.1.6 depends on System.Memory (>= 4.5.2) but System.Memory 4.5.2 was not found. An approximate best match of System.Memory 4.5.3 was resolved.",
       "libraryId": "System.Memory",
       "targetGraphs": [
