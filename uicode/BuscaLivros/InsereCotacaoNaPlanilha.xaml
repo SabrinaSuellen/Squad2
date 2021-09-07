@@ -1,11 +1,12 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="InsereCotacaoNaPlanilha" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="nomePlanilha" Type="InArgument(x:String)" />
+    <x:Property Name="nomeLog" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1756,1830</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1756,2002</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>InsereCotacaoNaPlanilha_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="76">
@@ -89,7 +90,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="InsereCotacaoNaPlanilha" sap:VirtualizedContainerService.HintSize="476,1765" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="InsereCotacaoNaPlanilha" sap:VirtualizedContainerService.HintSize="476,1937" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:GenericValue" Name="dolarCotationValue" />
       <Variable x:TypeArguments="ui:GenericValue" Name="euroCotationValue" />
@@ -166,13 +167,13 @@
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
     </Sequence>
-    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="434,964" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="[&quot;C:\Squad2\processando\&quot;+ nomePlanilha]">
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="434,1136" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="[&quot;C:\Squad2\processando\&quot;+ nomePlanilha]">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,855" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1027" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="dadosPlanilha" />
               <Variable x:TypeArguments="sd1:Color" Name="color" />
@@ -193,6 +194,7 @@
             <ui:ExcelWriteCell Cell="N2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="Planilha1" Text="[dolarCotationValue]" />
             <ui:ExcelSetRangeColor Color="[color.LightGoldenrodYellow]" DisplayName="Set Range Color" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="ExcelSetRangeColor_2" Range="M1:N1" SheetName="Planilha1" />
             <ui:ExcelSetRangeColor Color="[color.LightGoldenrodYellow]" DisplayName="Set Range Color" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="ExcelSetRangeColor_1" Range="M2:N2" SheetName="Planilha1" />
+            <ui:AppendLine DisplayName="Append Line" FileName="[&quot;C:\Squad2\logs\&quot;+ nomeLog]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[DateTime.Now.ToString(&quot;(HH_mm_ss)&quot;) + &quot;Cotação inserida dentro da planilha, junta a coloração para sua marcação&quot;]" UseDefaultEncoding="False" />
           </Sequence>
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>

@@ -1,11 +1,12 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="EnvioPlanilha" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ss="clr-namespace:System.Security;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="nomePlanilha" Type="InArgument(x:String)" />
+    <x:Property Name="nomeLog" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1756,1200</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1756,1372</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>EnvioPlanilha_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="33">
@@ -45,7 +46,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="23">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="46">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -69,9 +70,17 @@
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="EnvioPlanilha" sap:VirtualizedContainerService.HintSize="528,1135" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="EnvioPlanilha" sap:VirtualizedContainerService.HintSize="528,1307" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ss:SecureString" Name="passwordEmail" />
       <Variable x:TypeArguments="x:String" Name="emailAdress" />
@@ -89,13 +98,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:GetRobotCredential>
-    <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="Abre planilha de email para notificações&#xA;" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="486,924" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\Squad2\config\E-mails para Notificações – RPA.xlsx">
+    <ui:ExcelApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="Abre planilha de email para notificações&#xA;" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="486,1096" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="C:\Squad2\config\E-mails para Notificações – RPA.xlsx">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,773" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="452,945" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="dadosPlanilha" />
             </Sequence.Variables>
@@ -117,13 +126,13 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:ExcelReadRange>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="lê as linhas com os emails na planilha&#xA;" DataTable="[dadosPlanilha]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="410,540" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="lê as linhas com os emails na planilha&#xA;" DataTable="[dadosPlanilha]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="410,712" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <Sequence sap:VirtualizedContainerService.HintSize="376,379" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,551" sap2010:WorkflowViewState.IdRef="Sequence_2">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="enderecoEmail" />
                     </Sequence.Variables>
@@ -145,15 +154,14 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </Assign>
-                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="Prezados,&#xD;&#xA;o processo foi concluído. A planilha processada encontra-se C:\Squad2\processados.&#xD;&#xA;Atenciosamente,&#xD;&#xA;RPA." DisplayName="Send SMTP Mail Message" Email="[emailAdress]" EnableSSL="True" From="squad_two@outlook.com " sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Port="587" SecureConnection="Auto" SecurePassword="[passwordEmail]" Server="smtp-mail.outlook.com" Subject="RPA – Busca de Livros – E-mail Incorreto Recebido" To="[enderecoEmail]">
+                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="Prezados,&#xA;&#xA;o processo foi concluído. A planilha processada encontra-se C:\Squad2\processados.&#xA;Atenciosamente,&#xA;&#xA;RPA." DisplayName="Send SMTP Mail Message" Email="[emailAdress]" EnableSSL="True" From="squad_two@outlook.com " sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="False" Port="587" SecureConnection="Auto" SecurePassword="[passwordEmail]" Server="smtp-mail.outlook.com" Subject="RPA – Finalização do Processo Busca de Livros." To="[enderecoEmail]">
                       <ui:SendMail.Files>
                         <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                          <InArgument x:TypeArguments="x:String">
-                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;C:\Squad2\processados\&quot;+nomePlanilha" />
-                          </InArgument>
+                          <InArgument x:TypeArguments="x:String">["C:\Squad2\processados\"+nomePlanilha]</InArgument>
                         </scg:List>
                       </ui:SendMail.Files>
                     </ui:SendMail>
+                    <ui:AppendLine DisplayName="Append Line" FileName="[&quot;C:\Squad2\logs\&quot;+ nomeLog]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[DateTime.Now.ToString(&quot;(HH_mm_ss)&quot;) + &quot; E-mail com planilha enviado&quot;]" UseDefaultEncoding="False" />
                   </Sequence>
                 </ActivityAction>
               </ui:ForEachRow.Body>

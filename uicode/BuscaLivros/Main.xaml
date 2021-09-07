@@ -64,6 +64,7 @@
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="MainFlow" sap:VirtualizedContainerService.HintSize="1125,946" sap2010:WorkflowViewState.IdRef="Flowchart_3">
@@ -83,9 +84,9 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID6</x:Reference>
+      <x:Reference>__ReferenceID8</x:Reference>
     </Flowchart.StartNode>
-    <FlowStep x:Name="__ReferenceID6">
+    <FlowStep x:Name="__ReferenceID8">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">40,167.6</av:Point>
@@ -136,7 +137,7 @@
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">440,175.6</av:Point>
               <av:Size x:Key="ShapeSize">200,123</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">640,237.1 670,237.1 670,239.1 850,239.1</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">640,237.1 670,237.1 670,230 840,230</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Sequence sap2010:Annotation.AnnotationText="Nessa sequência é criada a planilha com os cabeçalhos padronizados" DisplayName="Criação da planilha" sap:VirtualizedContainerService.HintSize="200,123" sap2010:WorkflowViewState.IdRef="Sequence_11">
@@ -161,29 +162,35 @@
             <FlowStep x:Name="__ReferenceID1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">850,213.6</av:Point>
-                  <av:Size x:Key="ShapeSize">200,51</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">950,264.6 950,365.6</av:PointCollection>
+                  <av:Point x:Key="ShapeLocation">840,183.5</av:Point>
+                  <av:Size x:Key="ShapeSize">200,93</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">940,276.5 940,358.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Leitura e Validação de Email" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="LeituraEValidacaoDeEmails.xaml">
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Leitura, validação e escirta de emails na planilha" DisplayName="Leitura e Validação de Email" sap:VirtualizedContainerService.HintSize="200,93" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="LeituraEValidacaoDeEmails.xaml">
                 <ui:InvokeWorkflowFile.Arguments>
                   <InArgument x:TypeArguments="x:String" x:Key="nomeLog">[nomeLog]</InArgument>
                   <InArgument x:TypeArguments="x:String" x:Key="nomePlanilha">[nomePlanilha]</InArgument>
                 </ui:InvokeWorkflowFile.Arguments>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
               </ui:InvokeWorkflowFile>
               <FlowStep.Next>
                 <FlowStep x:Name="__ReferenceID2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">850,365.6</av:Point>
+                      <av:Point x:Key="ShapeLocation">840,358.5</av:Point>
                       <av:Size x:Key="ShapeSize">200,123</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">850,427.1 820,427.1 820,429.1 600,429.1</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">840,420 810,420 810,410 640,410</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Insere cotação obtida na API na planilha&#xA;Argumentos: &#xA;- nome da planilha" DisplayName="Insere Cotação na Planillha" sap:VirtualizedContainerService.HintSize="200,123" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="InsereCotacaoNaPlanilha.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="nomePlanilha">[nomePlanilha]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="nomeLog">[nomeLog]</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -195,34 +202,30 @@
                     <FlowStep x:Name="__ReferenceID3">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <av:Point x:Key="ShapeLocation">400,403.6</av:Point>
-                          <av:Size x:Key="ShapeSize">200,51</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">400,429.1 370,429.1 370,427.6 230,427.6</av:PointCollection>
+                          <av:Point x:Key="ShapeLocation">440,348.5</av:Point>
+                          <av:Size x:Key="ShapeSize">200,123</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">440,410 410,410 410,427.6 230,427.6</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:CommentOut sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CommentOut_4">
-                        <ui:CommentOut.Body>
-                          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_14">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Realiza Login Amazon UK/USA" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="amazonLogin.xaml">
-                              <ui:InvokeWorkflowFile.Arguments>
-                                <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                              </ui:InvokeWorkflowFile.Arguments>
-                            </ui:InvokeWorkflowFile>
-                          </Sequence>
-                        </ui:CommentOut.Body>
-                      </ui:CommentOut>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Realiza o login na amazon UK e USA para obter o frete dos livros&#xA;" DisplayName="Realiza Login Amazon UK/USA" sap:VirtualizedContainerService.HintSize="334,169" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="amazonLogin.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="nomeLogs">
+                            <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="nomeLog" />
+                          </InArgument>
+                        </ui:InvokeWorkflowFile.Arguments>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:InvokeWorkflowFile>
                       <FlowStep.Next>
                         <FlowStep x:Name="__ReferenceID5">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <av:Point x:Key="ShapeLocation">30,373.6</av:Point>
                               <av:Size x:Key="ShapeSize">200,108</av:Size>
-                              <av:PointCollection x:Key="ConnectorLocation">130,481.6 130,543.6</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">130,481.6 130,517</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Realiza Busca nos sites da AMZ e elege o melhor preço encontrado" DisplayName="Busca Amazon" sap:VirtualizedContainerService.HintSize="200,108" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="buscaAmazon.xaml">
@@ -237,20 +240,89 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:InvokeWorkflowFile>
                           <FlowStep.Next>
-                            <FlowStep x:Name="__ReferenceID4">
+                            <FlowStep x:Name="__ReferenceID6">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <av:Point x:Key="ShapeLocation">30,543.6</av:Point>
-                                  <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                  <av:Point x:Key="ShapeLocation">30,517</av:Point>
+                                  <av:Size x:Key="ShapeSize">200,123</av:Size>
+                                  <av:PointCollection x:Key="ConnectorLocation">230,578.5 260,578.5 260,580 440,580</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Start Process" FileName="[&quot;C:\Squad2\processando\&quot; + nomePlanilha]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="StartProcess_2">
+                              <Sequence sap2010:Annotation.AnnotationText="Injeta um código VBA na planilha para fazer o cálculo e destaque do melhor preço" DisplayName="Finalização da Planilha" sap:VirtualizedContainerService.HintSize="200,123" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                              </ui:StartProcess>
+                                <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="434,288" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_4" InstanceCachePeriod="3000" WorkbookPath="[&quot;C:\Squad2\processando\&quot; + nomePlanilha]">
+                                  <ui:ExcelApplicationScope.Body>
+                                    <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:InvokeVBA OutputValue="{x:Null}" CodeFilePath="C:\Squad2\config\Macros\Finalização.bas" DisplayName="Invoke VBA" EntryMethodName="Finalizacao" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeVBA_1" />
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </ui:ExcelApplicationScope.Body>
+                                </ui:ExcelApplicationScope>
+                              </Sequence>
+                              <FlowStep.Next>
+                                <FlowStep x:Name="__ReferenceID4">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <av:Point x:Key="ShapeLocation">440,511</av:Point>
+                                      <av:Size x:Key="ShapeSize">200,138</av:Size>
+                                      <av:PointCollection x:Key="ConnectorLocation">640,580 670,580 670,590 850,590</av:PointCollection>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Sequence sap2010:Annotation.AnnotationText="Nessa sequência a planilha com os preços é movida da pasta processando para a pasta processados" DisplayName="Movendo planilha" sap:VirtualizedContainerService.HintSize="200,138" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:MoveFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Move a planilha de uma pasta para a outra" Destination="C:\Squad2\processados" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="384,188" sap2010:WorkflowViewState.IdRef="MoveFile_3" Overwrite="False" Path="[&quot;C:\Squad2\processando\&quot;+nomePlanilha]">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </ui:MoveFile>
+                                    <ui:AppendLine DisplayName="Append Line" FileName="[&quot;C:\Squad2\logs\&quot;+ nomeLog]" sap:VirtualizedContainerService.HintSize="384,132" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[DateTime.Now.ToString(&quot;(HH_mm_ss)&quot;)+&quot;Planilha movida para Processados&quot;]" UseDefaultEncoding="False" />
+                                  </Sequence>
+                                  <FlowStep.Next>
+                                    <FlowStep x:Name="__ReferenceID7">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <av:Point x:Key="ShapeLocation">850,543.5</av:Point>
+                                          <av:Size x:Key="ShapeSize">200,93</av:Size>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Envio de email com planilha final anexada" DisplayName=" Envio Planilha " sap:VirtualizedContainerService.HintSize="200,93" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" LogEntry="No" LogExit="No" UnSafe="False" WorkflowFileName="EnvioPlanilha.xaml">
+                                        <ui:InvokeWorkflowFile.Arguments>
+                                          <InArgument x:TypeArguments="x:String" x:Key="nomePlanilha">[nomePlanilha]</InArgument>
+                                          <InArgument x:TypeArguments="x:String" x:Key="nomeLog">[nomeLog]</InArgument>
+                                        </ui:InvokeWorkflowFile.Arguments>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </ui:InvokeWorkflowFile>
+                                    </FlowStep>
+                                  </FlowStep.Next>
+                                </FlowStep>
+                              </FlowStep.Next>
                             </FlowStep>
                           </FlowStep.Next>
                         </FlowStep>
@@ -268,37 +340,9 @@
     <x:Reference>__ReferenceID1</x:Reference>
     <x:Reference>__ReferenceID2</x:Reference>
     <x:Reference>__ReferenceID3</x:Reference>
-    <FlowStep>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">420,543.6</av:Point>
-          <av:Size x:Key="ShapeSize">200,51</av:Size>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <ui:CommentOut sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CommentOut_3">
-        <ui:CommentOut.Body>
-          <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_13">
-            <Sequence sap2010:Annotation.AnnotationText="Nessa sequência a planilha com os preços é movida da pasta processando para a pasta processados" DisplayName="Movendo planilha" sap:VirtualizedContainerService.HintSize="200,144.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <ui:MoveFile ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Move a planilha de uma pasta para a outra" Destination="[diretorioProcessados]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="384,191.2" sap2010:WorkflowViewState.IdRef="MoveFile_3" Overwrite="False" Path="[diretorioProcessando+&quot;\&quot;+nomePlanilha]">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </ui:MoveFile>
-            </Sequence>
-          </Sequence>
-        </ui:CommentOut.Body>
-      </ui:CommentOut>
-    </FlowStep>
     <x:Reference>__ReferenceID4</x:Reference>
     <x:Reference>__ReferenceID5</x:Reference>
+    <x:Reference>__ReferenceID6</x:Reference>
+    <x:Reference>__ReferenceID7</x:Reference>
   </Flowchart>
 </Activity>
