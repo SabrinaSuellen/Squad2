@@ -3,7 +3,7 @@
     <x:Property Name="nomePlanilha" Type="InArgument(x:String)" />
     <x:Property Name="nomeLog" Type="InArgument(x:String)" />
     <x:Property Name="dadosLivrosDt" Type="InArgument(sd:DataTable)" />
-    <x:Property Name="numLinhas" Type="InArgument(x:Int32)" />
+    <x:Property Name="numLinhas" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
@@ -905,7 +905,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ExcelWriteRange AddHeaders="True" DataTable="[dadosLivrosDt]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Planilha1" StartingCell="[&quot;A&quot;+numLinhas.ToString]" />
+            <ui:ExcelWriteRange AddHeaders="True" DataTable="[dadosLivrosDt]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Planilha1" StartingCell="[&quot;A&quot;+numLinhas]" />
           </Sequence>
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
