@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1756,1372</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,1372</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>EnvioPlanilha_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="33">
@@ -161,7 +161,7 @@
                         </scg:List>
                       </ui:SendMail.Files>
                     </ui:SendMail>
-                    <ui:AppendLine DisplayName="Append Line" FileName="[&quot;C:\Squad2\logs\&quot;+ nomeLog]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[DateTime.Now.ToString(&quot;(HH_mm_ss)&quot;) + &quot; E-mail com planilha enviado&quot;]" UseDefaultEncoding="False" />
+                    <ui:AppendLine DisplayName="Atualização do Log" FileName="[&quot;C:\Squad2\logs\&quot;+ nomeLog]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[System.DateTime.Now.ToString(&quot;dd-MM-yyyy hh:mm&quot;)+&quot; E-mail com planilha enviado&quot;]" UseDefaultEncoding="False" />
                   </Sequence>
                 </ActivityAction>
               </ui:ForEachRow.Body>

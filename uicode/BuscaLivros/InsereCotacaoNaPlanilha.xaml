@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1756,2002</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,2002</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>InsereCotacaoNaPlanilha_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="76">
@@ -194,7 +194,7 @@
             <ui:ExcelWriteCell Cell="N2" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="Planilha1" Text="[dolarCotationValue]" />
             <ui:ExcelSetRangeColor Color="[color.LightGoldenrodYellow]" DisplayName="Set Range Color" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="ExcelSetRangeColor_2" Range="M1:N1" SheetName="Planilha1" />
             <ui:ExcelSetRangeColor Color="[color.LightGoldenrodYellow]" DisplayName="Set Range Color" sap:VirtualizedContainerService.HintSize="334,185" sap2010:WorkflowViewState.IdRef="ExcelSetRangeColor_1" Range="M2:N2" SheetName="Planilha1" />
-            <ui:AppendLine DisplayName="Append Line" FileName="[&quot;C:\Squad2\logs\&quot;+ nomeLog]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[DateTime.Now.ToString(&quot;(HH_mm_ss)&quot;) + &quot;Cotação inserida dentro da planilha, junta a coloração para sua marcação&quot;]" UseDefaultEncoding="False" />
+            <ui:AppendLine DisplayName="Append Line" FileName="[&quot;C:\Squad2\logs\&quot;+ nomeLog]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[System.DateTime.Now.ToString(&quot;dd-MM-yyyy hh:mm&quot;) + &quot; Cotação inserida dentro da planilha, junta a coloração para sua marcação&quot;]" UseDefaultEncoding="False" />
           </Sequence>
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
