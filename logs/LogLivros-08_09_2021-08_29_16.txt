@@ -1,0 +1,36 @@
+﻿08-09-2021 08:29 LogFile iniciado
+08-09-2021 08:29 Planilha criada
+08-09-2021 08:29 Lendo os e-mails
+08-09-2021 08:29 E-mail processado 16987 contém os seguintes valores: The Seven Husbands of Evelyn Hugo, Taylor Jenkins Reid, 156, Hardcover
+08-09-2021 08:29 E-mail com ID 23364 contém os seguintes campos inválidos:  |nome do livro| 
+08-09-2021 08:29 E-mail processado 75682 contém os seguintes valores: Verity, Colleen Hoover, 331, Paperback
+08-09-2021 08:29 Dados obtidos dos e-mails adicionados na planilha
+08-09-2021 08:29 Cotação inserida dentro da planilha, junta a coloração para sua marcação
+08-09-2021 08:29 - Login com falhas em System.String[] com usuário squad_two@outlook.com
+08-09-2021 08:30 - Login com falhas em System.String[] com usuário squad_two@outlook.com
+08-09-2021 08:30- Realizada a busca do livro The Seven Husbands of Evelyn Hugo com capa do tipo Hardcover-Preço do frete inválido na AMZ UK | Preço do frete inválido na AMZ USA | 
+08-09-2021 08:30- Realizada a busca do livro  com capa do tipo Paperback- Realizada com sucesso
+08-09-2021 08:31- Realizada a busca do livro Verity com capa do tipo Paperback- Realizada com sucesso
+08-09-2021 08:31 Lendo os e-mails
+08-09-2021 08:31 E-mail processado 16987 contém os seguintes valores: The Seven Husbands of Evelyn Hugo, Taylor Jenkins Reid, 156, Hardcover
+08-09-2021 08:31 E-mail com ID 23364 contém os seguintes campos inválidos:  |nome do livro| 
+08-09-2021 08:31 E-mail processado 75682 contém os seguintes valores: Verity, Colleen Hoover, 331, Paperback
+08-09-2021 08:31 Dados obtidos dos e-mails adicionados na planilha
+08-09-2021 08:32- Realizada a busca do livro The Seven Husbands of Evelyn Hugo com capa do tipo Hardcover-Preço do frete inválido na AMZ UK | Preço do frete inválido na AMZ USA | 
+08-09-2021 08:32- Realizada a busca do livro  com capa do tipo Paperback- Realizada com sucesso
+08-09-2021 08:33- Realizada a busca do livro Verity com capa do tipo Paperback- Realizada com sucesso
+08-09-2021 08:33 Lendo os e-mails
+08-09-2021 08:33 E-mail processado 16987 contém os seguintes valores: The Seven Husbands of Evelyn Hugo, Taylor Jenkins Reid, 156, Hardcover
+08-09-2021 08:33 E-mail com ID 23364 contém os seguintes campos inválidos:  |nome do livro| 
+08-09-2021 08:33 E-mail processado 75682 contém os seguintes valores: Verity, Colleen Hoover, 331, Paperback
+08-09-2021 08:33 Dados obtidos dos e-mails adicionados na planilha
+08-09-2021 08:34- Realizada a busca do livro The Seven Husbands of Evelyn Hugo com capa do tipo Hardcover-Preço do frete inválido na AMZ UK | Preço do frete inválido na AMZ USA | 
+08-09-2021 08:34- Realizada a busca do livro  com capa do tipo Paperback- Realizada com sucesso
+08-09-2021 08:35- Realizada a busca do livro Verity com capa do tipo Paperback- Realizada com sucesso
+08-09-2021 08:35 Lendo os e-mails
+08-09-2021 08:35 Nenhum email não lido encontrado, continuar recebe False
+08-09-2021 08:35 Código VBA utilizado na planilha
+08-09-2021 08:35 Planilha movida para Processados
+08-09-2021 08:35 E-mail com planilha enviado
+08-09-2021 08:35 E-mail com planilha enviado
+08-09-2021 08:35 E-mail com planilha enviado

@@ -139,7 +139,7 @@
         <OutArgument x:TypeArguments="x:String">[diretorioScripts]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">[diretorioAtual.Replace("BuscaLivros", "js scripts")]</InArgument>
+        <InArgument x:TypeArguments="x:String">[diretorioAtual.Replace("uicode\BuscaLivros", "config\js scripts")]</InArgument>
       </Assign.Value>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
