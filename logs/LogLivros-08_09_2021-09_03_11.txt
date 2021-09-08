@@ -1,0 +1,39 @@
+﻿08-09-2021 09:03 LogFile iniciado
+08-09-2021 09:03 Planilha criada
+08-09-2021 09:03 Lendo os e-mails
+08-09-2021 09:03 E-mail processado 15902 contém os seguintes valores: The Madness of Crowds, Louise Penny, 448, Hardcover
+08-09-2021 09:03 E-mail processado 16987 contém os seguintes valores: The Seven Husbands of Evelyn Hugo, Taylor Jenkins Reid, 156, Hardcover
+08-09-2021 09:03 E-mail com ID 23364 contém os seguintes campos inválidos:  |nome do livro| 
+08-09-2021 09:03 E-mail com ID 26983 contém os seguintes campos inválidos:  |tipo de capa| 
+08-09-2021 09:03 E-mail processado 26985 contém os seguintes valores: The Paper Palace, Miranda Cowley Heller, 400, Hardcover
+08-09-2021 09:03 E-mail processado 33698 contém os seguintes valores: The Midnight Library, Matt Haig, 304, Hardcover
+08-09-2021 09:03 E-mail processado 42558 contém os seguintes valores: You Have a Match, Emma Lord, 320, Hardcover
+08-09-2021 09:03 E-mail processado 75682 contém os seguintes valores: Verity, Colleen Hoover, 331, Paperback
+08-09-2021 09:03 E-mail processado 85423 contém os seguintes valores: Get A Life, Chloe Brown, Talia Hibbert, 384, Paperback
+08-09-2021 09:03 E-mail contém subject inválido: assunto não válido
+08-09-2021 09:03 E-mail contém subject inválido: Verify your new Amazon account
+08-09-2021 09:03 E-mail contém subject inválido: Verify your new Amazon account
+08-09-2021 09:03 E-mail contém subject inválido: Verify your new Amazon account
+08-09-2021 09:03 E-mail contém subject inválido: amazon.co.uk, action needed: Sign-in
+08-09-2021 09:03 E-mail contém subject inválido: amazon.co.uk, action needed: Sign-in
+08-09-2021 09:03 E-mail contém subject inválido: amazon.co.uk, action needed: Sign-in
+08-09-2021 09:03 Dados obtidos dos e-mails adicionados na planilha
+08-09-2021 09:03 Cotação inserida dentro da planilha, junta a coloração para sua marcação
+08-09-2021 09:03 - Login com falhas em System.String[] com usuário squad_two@outlook.com
+08-09-2021 09:04 - Login com falhas em System.String[] com usuário squad_two@outlook.com
+08-09-2021 09:04- Realizada a busca do livro The Madness of Crowds com capa do tipo Hardcover- Realizada com sucesso
+08-09-2021 09:06- Realizada a busca do livro The Seven Husbands of Evelyn Hugo com capa do tipo Hardcover-Preço do frete inválido na AMZ USA | 
+08-09-2021 09:06- Realizada a busca do livro  com capa do tipo Paperback- Realizada com sucesso
+08-09-2021 09:06- Realizada a busca do livro 1984 com capa do tipo - Realizada com sucesso
+08-09-2021 09:06- Realizada a busca do livro The Paper Palace com capa do tipo Hardcover- Realizada com sucesso
+08-09-2021 09:07- Realizada a busca do livro The Midnight Library com capa do tipo Hardcover- Realizada com sucesso
+08-09-2021 09:08- Realizada a busca do livro You Have a Match com capa do tipo Hardcover- Realizada com sucesso
+08-09-2021 09:09- Realizada a busca do livro Verity com capa do tipo Paperback- Realizada com sucesso
+08-09-2021 09:10- Realizada a busca do livro Get A Life, Chloe Brown com capa do tipo Paperback- Realizada com sucesso
+08-09-2021 09:10 Lendo os e-mails
+08-09-2021 09:10 Nenhum email não lido encontrado, continuar recebe False
+08-09-2021 09:10 Código VBA utilizado na planilha
+08-09-2021 09:10 Planilha movida para Processados
+08-09-2021 09:10 E-mail com planilha enviado
+08-09-2021 09:10 E-mail com planilha enviado
+08-09-2021 09:10 E-mail com planilha enviado
